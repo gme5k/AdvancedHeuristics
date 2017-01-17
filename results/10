@@ -1,0 +1,91 @@
+Bound: 98
+ Scheme: [2, 9, 11, 13, 14, 26, 46]
+ Used Transmitters: 8 4 3 1 0 0 0
+ Cost: 98
+ Number of solutions: 2
+ Iterations: 749853
+
+
+
+Bound: 287
+ Scheme: [13, 21, 23, 30, 35, 44, 47]
+ Used Transmitters: 8 4 3 1 0 0 0
+ Cost: 287
+ Number of solutions: 2
+ Iterations: 221548
+
+
+
+Bound: 211
+ Scheme: [8, 17, 19, 22, 27, 32, 44]
+ Used Transmitters: 8 4 3 1 0 0 0
+ Cost: 211
+ Number of solutions: 2
+ Iterations: 580174
+
+
+
+Bound: 106
+ Scheme: [3, 7, 12, 19, 25, 26, 31]
+ Used Transmitters: 7 6 2 1 0 0 0
+ Cost: 106
+ Number of solutions: 4
+ Iterations: 100396
+
+
+
+Bound: 159
+ Scheme: [7, 8, 19, 24, 32, 32, 42]
+ Used Transmitters: 7 6 2 1 0 0 0
+ Cost: 159
+ Number of solutions: 4
+ Iterations: 27223
+
+
+
+Bound: 137
+ Scheme: [4, 11, 13, 22, 23, 42, 48]
+ Used Transmitters: 8 4 3 1 0 0 0
+ Cost: 137
+ Number of solutions: 2
+ Iterations: 165220
+
+
+
+Bound: 228
+ Scheme: [12, 16, 16, 20, 21, 23, 36]
+ Used Transmitters: 8 3 4 1 0 0 0
+ Cost: 228
+ Number of solutions: 4
+ Iterations: 354398
+
+
+
+Bound: 123
+ Scheme: [3, 6, 18, 30, 35, 40, 50]
+ Used Transmitters: 7 6 2 1 0 0 0
+ Cost: 123
+ Number of solutions: 4
+ Iterations: 42005
+
+
+
+Bound: 222
+ Scheme: [10, 15, 17, 31, 33, 43, 49]
+ Used Transmitters: 8 4 3 1 0 0 0
+ Cost: 222
+ Number of solutions: 2
+ Iterations: 82543
+
+
+
+Bound: 102
+ Scheme: [2, 7, 15, 16, 39, 42, 45]
+ Used Transmitters: 7 6 2 1 0 0 0
+ Cost: 102
+ Number of solutions: 4
+ Iterations: 71159
+
+
+
+0

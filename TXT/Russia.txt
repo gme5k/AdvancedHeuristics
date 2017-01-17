@@ -1,0 +1,83 @@
+Adygea,Krasnodar
+Altai-Krai,Altai,Kemerovo,Novosibirsk
+Altai,Tuva,Khakassia,Altai-Krai,Kemerovo
+Amur,Sakha,Zabaykalsky,Khabarovsk,Jewish-Autonomous-Oblast
+Arkhangelsk,Karelia,Komi,Vologda,Kirov,Nenets
+Astrakhan,Kalmykia,Volgograd
+Bashkortostan,Tatarstan,Udmurtia,Perm,Orenburg,Sverdlovsk,Chelyabinsk
+Belgorod,Voronezh,Kursk
+Bryansk,Smolensk,Kursk,Oryol,Kaluga
+Buryatia,Tuva,Zabaykalsky,Irkutsk
+Chechnya,Dagestan,Ingushetia,North Ossetia,Stavropol
+Chelyabinsk,Bashkortostan,Kurgan,Orenburg,Sverdlovsk
+Chukotka,Sakha,Kamchatka,Magadan,Khabarovsk
+Chuvashia,Mariy-El,Mordovia,Tatarstan,Nizhny-Novgorod,Ulyanovsk
+Dagestan,Kalmykia,Chechnya,Stavropol
+Ingushetia,North Ossetia,Chechnya
+Irkutsk,Buryatia,Sakha,Tuva,Krasnoyarsk,Zabaykalsky
+Ivanovo,Yaroslavl,Nizhny-Novgorod,Vladimir,Kostroma
+Jewish-Autonomous-Oblast,Khabarovsk,Amur
+Kabardino-Balkaria,North Ossetia,Stavropol,Karachay-Cherkessia
+Kalmykia,Dagestan,Stavropol,Astrakhan,Volgograd,Rostov
+Kaluga,Bryansk,Moscow,Oryol,Smolensk,Tula
+Kaliningrad
+Kamchatka,Chukotka,Magadan
+Karachay-Cherkessia,Kabardino-Balkaria,Stavropol,Krasnodar
+Kemerovo,Altai,Khakassia,Altai-Krai,Krasnoyarsk,Novosibirsk,Tomsk
+Khakassia,Altai,Tuva,Krasnoyarsk,Kemerovo
+Khabarovsk,Amur,Jewish-Autonomous-Oblast,Magadan,Sakha
+Khanty-Mansi,Komi,Krasnoyarsk,Sverdlovsk,Tomsk,Tyumen,Yamalo-Nenets
+Kirov,Komi,Mariy-El,Tatarstan,Udmurtia,Perm,Arkhangelsk,Vologda,Nizhny-Novgorod,Kostroma
+Komi,Perm,Arkhangelsk,Kirov,Sverdlovsk,Nenets,Yamalo-Nenets,Khanty-Mansi
+Kostroma,Nizhny-Novgorod,Yaroslavl,Vologda,Kirov,Ivanovo
+Krasnodar,Adygea,Karachay-Cherkessia,Stavropol,Rostov
+Krasnoyarsk,Sakha,Irkutsk,Kemerovo,Khakassia,Tuva,Khanty-Mansi,Yamalo-Nenets,Tomsk
+Kurgan,Sverdlovsk,Chelyabinsk,Tyumen
+Kursk,Belgorod,Bryansk,Voronezh,Lipetsk,Oryol
+Leningrad,Karelia,Vologda,Novgorod,Pskov,Saint Petersburg
+Lipetsk,Tambov,Kursk,Voronezh,Ryazan,Oryol,Tula
+Magadan,Sakha,Kamchatka,Khabarovsk,Chukotka
+Mariy-El,Tatarstan,Chuvashia,Kirov,Nizhny-Novgorod
+Mordovia,Chuvashia,Nizhny-Novgorod,Penza,Ryazan,Ulyanovsk
+Moscow,MoscowCity,Vladimir,Kaluga,Smolensk,Ryazan,Tver,Tula,Yaroslavl
+MoscowCity,Moscow,Kaluga
+Murmansk,Karelia
+Nenets,Komi,Arkhangelsk,Yamalo-Nenets
+Nizhny-Novgorod,Mariy-El,Mordovia,Chuvashia,Kostroma,Ivanovo,Vladimir,Kirov,Ryazan
+North Ossetia,Ingushetia,Kabardino-Balkaria,Stavropol,Chechnya
+Novgorod,Vologda,Leningrad,Pskov,Tver
+Novosibirsk,Altai-Krai,Kemerovo,Omsk,Tomsk
+Omsk,Novosibirsk,Tomsk,Tyumen
+Orenburg,Bashkortostan,Tatarstan,Samara,Chelyabinsk
+Oryol,Bryansk,Kaluga,Kursk,Lipetsk,Tula
+Penza,Mordovia,Ryazan,Saratov,Tambov,Ulyanovsk
+Perm,Bashkortostan,Komi,Udmurtia,Kirov,Sverdlovsk
+Primorsky,Khabarovsk
+Pskov,Leningrad,Novgorod,Tver,Smolensk
+Karelia,Arkhangelsk,Vologda,Leningrad,Murmansk
+Rostov,Kalmykia,Stavropol,Krasnodar,Volgograd,Voronezh
+Ryazan,Vladimir,Lipetsk,Moscow,Nizhny-Novgorod,Tambov,Tula,Penza,Mordovia
+Saint Petersburg,Leningrad
+Sakha,Zabaykalsky,Krasnoyarsk,Khabarovsk,Amur,Irkutsk,Magadan,Chukotka
+Samara,Tatarstan,Orenburg,Saratov,Ulyanovsk
+Sakhalin
+Saratov,Volgograd,Voronezh,Penza,Samara,Tambov,Ulyanovsk
+Smolensk,Bryansk,Kaluga,Moscow,Pskov,Tver
+Stavropol,Dagestan,Kabardino-Balkaria,Kalmykia,Karachay-Cherkessia,North Ossetia,Chechnya,Krasnodar,Rostov
+Sverdlovsk,Komi,Bashkortostan,Perm,Kurgan,Tyumen,Chelyabinsk,Khanty-Mansi
+Tambov,Voronezh,Lipetsk,Penza,Ryazan,Saratov
+Tatarstan,Bashkortostan,Mariy-El,Udmurtia,Chuvashia,Kirov,Orenburg,Samara,Ulyanovsk
+Tomsk,Krasnoyarsk,Kemerovo,Novosibirsk,Omsk,Tyumen,Khanty-Mansi
+Tula,Kaluga,Lipetsk,Moscow,Oryol,Ryazan
+Tuva,Altai-Krai,Buryatia,Khakassia,Irkutsk,Krasnoyarsk
+Tver,Vologda,Moscow,Novgorod,Pskov,Smolensk,Yaroslavl
+Tyumen,Kurgan,Omsk,Sverdlovsk,Tomsk,Khanty-Mansi
+Udmurtia,Bashkortostan,Tatarstan,Perm,Kirov
+Ulyanovsk,Mordovia,Tatarstan,Chuvashia,Penza,Samara,Saratov
+Vladimir,Ivanovo,Moscow,Nizhny-Novgorod,Ryazan,Yaroslavl
+Volgograd,Kalmykia,Astrakhan,Rostov,Saratov,Voronezh
+Vologda,Karelia,Arkhangelsk,Kirov,Kostroma,Leningrad,Novgorod,Tver,Yaroslavl
+Voronezh,Belgorod,Volgograd,Kursk,Lipetsk,Tambov,Saratov,Rostov
+Yamalo-Nenets,Komi,Krasnoyarsk,Khanty-Mansi,Nenets
+Yaroslavl,Vologda,Ivanovo,Vladimir,Tver,Moscow,Kostroma
+Zabaykalsky,Buryatia,Sakha,Amur,Irkutsk

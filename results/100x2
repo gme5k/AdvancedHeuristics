@@ -1,0 +1,49 @@
+greedyLow: 176
+ branchLow: 176
+ Scheme: [6, 7, 30, 32, 34, 41, 50]
+ Transmitters Used: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+ nSolutions: 4
+ Iterations: 59560
+
+greedyLow: 41
+ branchLow: 41
+ Scheme: [1, 3, 5, 6, 24, 35, 44]
+ Transmitters Used: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+ nSolutions: 6
+ Iterations: 71800
+
+greedyLow: 408
+ branchLow: 408
+ Scheme: [15, 35, 36, 40, 45, 45, 45]
+ Transmitters Used: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+ nSolutions: 2
+ Iterations: 7928110
+
+greedyLow: 178
+ branchLow: 178
+ Scheme: [6, 12, 20, 24, 24, 25, 50]
+ Transmitters Used: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+ nSolutions: 6
+ Iterations: 658815
+
+greedyLow: 95
+ branchLow: 95
+ Scheme: [2, 5, 12, 27, 27, 38, 46]
+ Transmitters Used: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+ nSolutions: 6
+ Iterations: 49157
+
+
+ maxIterations: 7928110
+ fivePlusCount: 4
+ fivePlusNoDuplicateCount: 0

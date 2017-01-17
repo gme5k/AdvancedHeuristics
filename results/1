@@ -1,0 +1,9 @@
+greedyLow: 773
+ branchLow: 773
+ Scheme: [1, 95, 96, 97, 100, 100, 100]
+ Transmitters Used: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+ nSolutions: 2
+ Iterations: 43178957
+

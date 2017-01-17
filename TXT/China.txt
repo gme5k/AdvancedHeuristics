@@ -1,0 +1,33 @@
+Anhui,Hubei,Henan,Shandong,Jiangsu,Zhejiang,Jiangxi
+Beijing,Hebei,Tianjin
+Chongqing,Sichuan,Guizhou,Hunan,Hubei,Shaanxi
+Fujian,Zhejiang,Jiangxi,Guangdong
+Guangdong,Fujian,Jiangxi,Hunan,Guangxi,Macao,Hong Kong
+Guangxi,Guangdong,Hunan,Guizhou,Yunnan
+Guizhou,Guangxi,Yunnan,Sichuan,Chongqing,Hunan
+Gansu,Xinjiang Uygur,Inner Mongolia,Qinghai,Shaanxi,Ningxia,Sichuan
+Hainan
+Hebei,Inner Mongolia,Beijing,Tianjin,Shanxi,Henan,Liaoning,Shandong
+Henan,Shaanxi,Shanxi,Hebei,Shandong,Anhui,Hubei
+Hong Kong,Guangdong
+Heilongjiang,Inner Mongolia,Jilin
+Hunan,Jiangxi,Guangdong,Guangxi,Guizhou,Chongqing,Hubei
+Hubei,Chongqing,Hunan,Jiangxi,Anhui,Henan,Shaanxi
+Jilin,Liaoning,Heilongjiang,Inner Mongolia
+Jiangsu,Shandong,Anhui,Shanghai,Zhejiang
+Jiangxi,Fujian,Guangdong,Hunan,Hubei,Anhui,Zhejiang
+Liaoning,Jilin,Inner Mongolia,Hebei
+Ningxia,Inner Mongolia,Gansu,Shaanxi
+Macao,Guangdong
+Inner Mongolia,Heilongjiang,Jilin,Liaoning,Hebei,Shanxi,Shaanxi,Ningxia,Gansu
+Qinghai,Gansu,Xinjiang Uygur,Tibet,Sichuan
+Shaanxi,Inner Mongolia,Sichuan,Chongqing,Hubei,Henan,Shanxi,Ningxia,Gansu
+Sichuan,Tibet,Yunnan,Guizhou,Chongqing,Shaanxi,Gansu,Qinghai
+Shandong,Hebei,Henan,Jiangsu,Anhui
+Shanghai,Jiangsu,Zhejiang
+Shanxi,Shaanxi,Inner Mongolia,Hebei,Henan
+Tianjin,Hebei,Beijing
+Tibet,Xinjiang Uygur,Qinghai,Sichuan,Yunnan
+Xinjiang Uygur,Gansu,Qinghai,Tibet
+Yunnan,Tibet,Sichuan,Guizhou,Guangxi
+Zhejiang,Shanghai,Anhui,Jiangxi,Jiangsu,Fujian

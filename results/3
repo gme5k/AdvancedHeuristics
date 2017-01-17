@@ -1,0 +1,23 @@
+greedyLow: 87
+ branchLow: 87
+ Scheme: [4, 6, 6, 13, 17, 49, 50]
+ Transmitters Used: [[8, 4, 3, 1, 0, 0, 0], [8, 3, 4, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 3, 4, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+ nSolutions: 4
+ Iterations: 56742
+
+greedyLow: 295
+ branchLow: 295
+ Scheme: [3, 33, 34, 37, 37, 39, 41]
+ Transmitters Used: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+ nSolutions: 2
+ Iterations: 41634174
+
+
+ maxIterations: 41634174
+ fivePlusCount: 0
+ fivePlusNoDuplicateCount: 0
+ hardestScheme: [3, 33, 34, 37, 37, 39, 41]

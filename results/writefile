@@ -1,0 +1,1003 @@
+
+ branch
+ Scheme: [16, 17, 18, 27, 35, 46, 50]
+
+ greedyLowestCost: 277
+ minScoreFreq: 815
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 277
+ branchIterations: 37516
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ greedy
+ Scheme: [16, 17, 18, 27, 35, 46, 50]
+
+ greedyLowestCost: 277
+ minScoreFreq: 815
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 277
+ branchIterations: 37516
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ branch
+ Scheme: [7, 16, 21, 21, 25, 42, 49]
+
+ greedyLowestCost: 204
+ minScoreFreq: 1002
+ greedyUsedTrans[[8, 4, 2, 2, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 204
+ branchIterations: 820796
+ branchNSolutions: 16
+ branchTransUsed: [[8, 4, 2, 2, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 3, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 3, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ greedy
+ Scheme: [9, 11, 13, 18, 36, 39, 43]
+
+ greedyLowestCost: 173
+ minScoreFreq: 802
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 173
+ branchIterations: 41577
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ branch
+ Scheme: [17, 25, 27, 31, 33, 35, 35]
+
+ greedyLowestCost: 348
+ minScoreFreq: 274
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 348
+ branchIterations: 1617195
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ greedy
+ Scheme: [17, 25, 27, 31, 33, 35, 35]
+
+ greedyLowestCost: 348
+ minScoreFreq: 274
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 348
+ branchIterations: 1617195
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ greedy
+ Scheme: [7, 17, 23, 29, 37, 38, 50]
+
+ greedyLowestCost: 222
+ minScoreFreq: 251
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 222
+ branchIterations: 377389
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ branch
+ Scheme: [3, 20, 31, 36, 42, 44, 46]
+
+ greedyLowestCost: 233
+ minScoreFreq: 293
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 233
+ branchIterations: 1703244
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ branch
+ Scheme: [13, 25, 26, 26, 29, 30, 40]
+
+ greedyLowestCost: 308
+ minScoreFreq: 1036
+ greedyUsedTrans[[8, 4, 2, 2, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 308
+ branchIterations: 8171238
+ branchNSolutions: 16
+ branchTransUsed: [[8, 4, 2, 2, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 3, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 3, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ greedy
+ Scheme: [3, 8, 10, 11, 32, 37, 44]
+
+ greedyLowestCost: 97
+ minScoreFreq: 239
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 97
+ branchIterations: 104079
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [8, 10, 14, 16, 16, 19, 49]
+
+ greedyLowestCost: 160
+ minScoreFreq: 576
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 160
+ branchIterations: 219549
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ branch
+ Scheme: [3, 28, 32, 34, 37, 37, 50]
+
+ greedyLowestCost: 266
+ minScoreFreq: 273
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 266
+ branchIterations: 10960931
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [4, 16, 28, 31, 31, 31, 45]
+
+ greedyLowestCost: 211
+ minScoreFreq: 856
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 211
+ branchIterations: 2837506
+ branchNSolutions: 10
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 0, 0, 1, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 0, 0, 1, 0]]
+ fivePlus: 4
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [6, 11, 18, 33, 33, 39, 44]
+
+ greedyLowestCost: 177
+ minScoreFreq: 546
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 177
+ branchIterations: 107590
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [1, 2, 15, 21, 21, 39, 46]
+
+ greedyLowestCost: 70
+ minScoreFreq: 578
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 70
+ branchIterations: 33776
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ branch
+ Scheme: [1, 31, 40, 42, 46, 47, 48]
+
+ greedyLowestCost: 294
+ minScoreFreq: 278
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 294
+ branchIterations: 12698285
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [9, 11, 25, 26, 26, 35, 37]
+
+ greedyLowestCost: 205
+ minScoreFreq: 552
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 205
+ branchIterations: 125538
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [14, 21, 31, 33, 33, 40, 44]
+
+ greedyLowestCost: 319
+ minScoreFreq: 574
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 319
+ branchIterations: 858878
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ branch
+ Scheme: [1, 33, 37, 39, 41, 43, 48]
+
+ greedyLowestCost: 290
+ minScoreFreq: 271
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 290
+ branchIterations: 24249639
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [21, 22, 33, 33, 33, 39, 43]
+
+ greedyLowestCost: 378
+ minScoreFreq: 577
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 378
+ branchIterations: 130429
+ branchNSolutions: 18
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 1, 0, 2, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 1, 0, 2, 0, 0]]
+ fivePlus: 10
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [2, 7, 15, 16, 16, 19, 37]
+
+ greedyLowestCost: 102
+ minScoreFreq: 528
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 102
+ branchIterations: 774975
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [10, 12, 19, 20, 20, 33, 43]
+
+ greedyLowestCost: 200
+ minScoreFreq: 561
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 200
+ branchIterations: 117848
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ greedy
+ Scheme: [4, 14, 18, 41, 41, 45, 48]
+
+ greedyLowestCost: 183
+ minScoreFreq: 232
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 183
+ branchIterations: 212863
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [1, 2, 7, 8, 8, 32, 42]
+
+ greedyLowestCost: 41
+ minScoreFreq: 547
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 41
+ branchIterations: 95585
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [14, 16, 18, 38, 38, 41, 46]
+
+ greedyLowestCost: 268
+ minScoreFreq: 842
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 268
+ branchIterations: 84815
+ branchNSolutions: 8
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ greedy
+ Scheme: [10, 15, 19, 25, 35, 35, 37]
+
+ greedyLowestCost: 222
+ minScoreFreq: 224
+ greedyUsedTrans[[8, 4, 3, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 222
+ branchIterations: 112678
+ branchNSolutions: 2
+ branchTransUsed: [[8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0]]
+ fivePlus: 0
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [11, 13, 25, 26, 26, 29, 42]
+
+ greedyLowestCost: 231
+ minScoreFreq: 609
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 231
+ branchIterations: 202426
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [7, 10, 28, 33, 33, 34, 45]
+
+ greedyLowestCost: 198
+ minScoreFreq: 579
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 198
+ branchIterations: 174070
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [20, 21, 34, 39, 39, 40, 46]
+
+ greedyLowestCost: 373
+ minScoreFreq: 599
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 373
+ branchIterations: 64281
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [28, 28, 33, 36, 36, 40, 43]
+
+ greedyLowestCost: 466
+ minScoreFreq: 542
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 466
+ branchIterations: 36942
+ branchNSolutions: 12
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0]]
+ fivePlus: 4
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [10, 11, 19, 27, 27, 28, 50]
+
+ greedyLowestCost: 201
+ minScoreFreq: 583
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 201
+ branchIterations: 49914
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [1, 4, 16, 18, 18, 22, 30]
+
+ greedyLowestCost: 81
+ minScoreFreq: 556
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 81
+ branchIterations: 209901
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [11, 12, 29, 29, 29, 40, 50]
+
+ greedyLowestCost: 236
+ minScoreFreq: 545
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 236
+ branchIterations: 124945
+ branchNSolutions: 18
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 1, 0, 2, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 1, 1, 1, 0, 0], [7, 6, 1, 0, 2, 0, 0]]
+ fivePlus: 10
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [20, 24, 31, 33, 33, 39, 44]
+
+ greedyLowestCost: 379
+ minScoreFreq: 559
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 379
+ branchIterations: 356426
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [5, 5, 6, 14, 14, 23, 49]
+
+ greedyLowestCost: 91
+ minScoreFreq: 565
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 91
+ branchIterations: 34046
+ branchNSolutions: 12
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0]]
+ fivePlus: 4
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [25, 26, 34, 44, 44, 46, 49]
+
+ greedyLowestCost: 443
+ minScoreFreq: 564
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 443
+ branchIterations: 49315
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [9, 18, 28, 37, 37, 44, 46]
+
+ greedyLowestCost: 264
+ minScoreFreq: 582
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 264
+ branchIterations: 501806
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [14, 15, 22, 34, 34, 36, 46]
+
+ greedyLowestCost: 266
+ minScoreFreq: 557
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 266
+ branchIterations: 41771
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [8, 15, 24, 27, 27, 33, 45]
+
+ greedyLowestCost: 221
+ minScoreFreq: 566
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 221
+ branchIterations: 667830
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [1, 3, 22, 44, 44, 46, 49]
+
+ greedyLowestCost: 113
+ minScoreFreq: 541
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 113
+ branchIterations: 60041
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [3, 8, 20, 26, 26, 26, 46]
+
+ greedyLowestCost: 135
+ minScoreFreq: 577
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 135
+ branchIterations: 231523
+ branchNSolutions: 8
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 0, 0, 1, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 0, 0, 1, 0]]
+ fivePlus: 4
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [7, 9, 12, 13, 13, 31, 32]
+
+ greedyLowestCost: 140
+ minScoreFreq: 583
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 140
+ branchIterations: 273914
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [1, 5, 18, 23, 23, 27, 49]
+
+ greedyLowestCost: 96
+ minScoreFreq: 546
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 96
+ branchIterations: 147640
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [4, 10, 28, 29, 29, 43, 48]
+
+ greedyLowestCost: 173
+ minScoreFreq: 569
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 173
+ branchIterations: 237779
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [3, 9, 19, 26, 26, 34, 46]
+
+ greedyLowestCost: 139
+ minScoreFreq: 585
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 139
+ branchIterations: 219244
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [1, 1, 8, 9, 9, 24, 46]
+
+ greedyLowestCost: 38
+ minScoreFreq: 608
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 38
+ branchIterations: 33746
+ branchNSolutions: 12
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0]]
+ fivePlus: 4
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [18, 22, 41, 43, 43, 44, 50]
+
+ greedyLowestCost: 383
+ minScoreFreq: 554
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 383
+ branchIterations: 365601
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [2, 8, 12, 12, 12, 31, 34]
+
+ greedyLowestCost: 96
+ minScoreFreq: 1006
+ greedyUsedTrans[[8, 4, 2, 2, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 96
+ branchIterations: 1288185
+ branchNSolutions: 144
+ branchTransUsed: [[8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 3, 0, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 0, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 0, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 0, 3, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 0, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 0, 2, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 0, 2, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 2, 0, 0, 0], [8, 4, 1, 3, 0, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 1, 1, 0, 0], [8, 4, 1, 2, 1, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 2, 0, 2, 0, 0], [8, 4, 1, 1, 2, 0, 0], [8, 4, 1, 0, 3, 0, 0]]
+ fivePlus: 128
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [9, 14, 28, 33, 33, 45, 47]
+
+ greedyLowestCost: 236
+ minScoreFreq: 568
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 236
+ branchIterations: 174770
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [21, 26, 32, 40, 40, 44, 50]
+
+ greedyLowestCost: 407
+ minScoreFreq: 546
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 407
+ branchIterations: 242994
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [2, 4, 11, 45, 45, 46, 46]
+
+ greedyLowestCost: 105
+ minScoreFreq: 574
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 105
+ branchIterations: 57608
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [4, 4, 20, 34, 34, 36, 42]
+
+ greedyLowestCost: 126
+ minScoreFreq: 579
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 126
+ branchIterations: 44778
+ branchNSolutions: 12
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [6, 7, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [6, 7, 2, 0, 1, 0, 0]]
+ fivePlus: 4
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [4, 13, 40, 41, 41, 41, 48]
+
+ greedyLowestCost: 227
+ minScoreFreq: 560
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 227
+ branchIterations: 736422
+ branchNSolutions: 8
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 0, 0, 1, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 0, 0, 1, 0]]
+ fivePlus: 4
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [17, 23, 31, 34, 34, 42, 44]
+
+ greedyLowestCost: 353
+ minScoreFreq: 571
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 353
+ branchIterations: 554936
+ branchNSolutions: 6
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ fivePlus
+ Scheme: [16, 20, 24, 45, 45, 46, 48]
+
+ greedyLowestCost: 325
+ minScoreFreq: 842
+ greedyUsedTrans[[7, 6, 2, 1, 0, 0, 0]]
+ greedyFivePlus0
+ greedyFivePlusNoDuplicate0
+
+ branchLowestCost: 325
+ branchIterations: 114628
+ branchNSolutions: 8
+ branchTransUsed: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0], [8, 4, 3, 1, 0, 0, 0], [8, 4, 3, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 0, 1, 0, 0]]
+ fivePlus: 2
+ fivePlusNoDuplicate: 0
+
+
+
+ Hardest Branch
+ maxIterations: 24249639
+ fivePlusCount: 236
+ fivePlusNoDuplicateCount: 0
+ hardestScheme: [1, 33, 37, 39, 41, 43, 48]
+
+
+ Hardest Greedy
+ curMinScoreFreq: 224
+ fivePlusCountG: 0
+ fivePlusNoDuplicateCountG: 0
+ hardestScheme: [10, 15, 19, 25, 35, 35, 37]
