@@ -498,7 +498,7 @@ q5l = []
 avgl = []
 scorel = []
 
-for i in range(5000):
+for i in range(2000):
     
     print h
     provinces = []
