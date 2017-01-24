@@ -18,18 +18,18 @@ def greedyRandom(nationtxt):
     ### stepcounter = 0
 
     while True:
-        #Buiten try loop 
+        #Buiten try loop
         provinceNames = []
         nation = nationLoader("TXT/" + nationtxt)
-        
+
         for province in nation:
             provinceNames.append(province)
 
-        try:            
+        try:
             # Randomly shuffle list of province names
             shuffle(provinceNames)
-            
-         
+
+
             for province in provinceNames:
                 transmitterOptions = [1, 2, 3, 4]
 
@@ -50,12 +50,12 @@ def greedyRandom(nationtxt):
                     ### jsonPath = "JSON/" + nationtxt[:-4] + "/Step" + str(stepcounter) + ".txt"
                     ### json.dump(nation, open(jsonPath,'w'))
             break
-            
+
         except:
             pass
 
     return nation
-    
+
 def Repeater(algorithm, runs, nationtxt):
     """
     Show distribution plot of algorithm
@@ -78,13 +78,13 @@ def Repeater(algorithm, runs, nationtxt):
     # score range has to be between these two numbers
     for i in scoreRange:
         scores.update({i : 0})
-    
+
     #~ print "Running " + str(algorithm)[0:-18] + "> " + str(runs) + " times...\n"
-    
-    
+
+
     minScore = 10**40
-    
-   
+
+
     scheme = kostenschema()
     avg = (scheme[0] + scheme[1] + scheme[2] + scheme[3] + scheme[4] + scheme[5] + scheme[6]) / 7.
     p0 = (scheme[0] - avg)**2
@@ -96,28 +96,28 @@ def Repeater(algorithm, runs, nationtxt):
     p6 = (scheme[6] - avg)**2
     var = (p0 + p1 + p2 + p3 + p4 + p5 + p6) / 7.
     sDev = var**0.5
-    
-    
+
+
     q0 = scheme[1] - scheme[0]
     q1 = scheme[2] - scheme[1]
     q2 = scheme[3] - scheme[2]
     q3 = scheme[4] - scheme[3]
     q4 = scheme[5] - scheme[4]
     q5 = scheme[6] - scheme[5]
-    
+
     for i in range(runs):
         nation = algorithm(nationtxt)
-        
+
         score = randScoreFunction(nation, scheme)
         scores[score] += 1
-        
+
         # keep track of best scores and nation
         if score < minScore:
             minScore = score
             bestNation = nation
 
     maxFreq = 0
-   
+
     scoreCount = 0
 
     for score in scores:
@@ -127,23 +127,23 @@ def Repeater(algorithm, runs, nationtxt):
         if score == minScore:
             minScoreFreq = scores[score]
         if scores[score] >= 1:
-            scoreCount += 1 
-    
-    
+            scoreCount += 1
+
+
     usedTrans = []
     fivePlus = 0
     fivePlusNoDuplicate = 0
 
     one = 0
-    two = 0 
+    two = 0
     three = 0
     four = 0
     five = 0
     six = 0
     seven = 0
 
-    for province in bestNation: 
-        
+    for province in bestNation:
+
         if bestNation[province][1] == 1:
             one += 1
         if bestNation[province][1] == 2:
@@ -158,16 +158,16 @@ def Repeater(algorithm, runs, nationtxt):
             six += 1
         if bestNation[province][1] == 7:
             seven += 1
-            
-    
+
+
     if five > 0 or six > 0 or seven > 0:
         fivePlus += 1
         if scheme[3] != scheme[4]:
             fivePlusNoDuplicate += 1
-    
-    usedTrans.append([one, two, three, four, five, six, seven])     
-        
-        
+
+    usedTrans.append([one, two, three, four, five, six, seven])
+
+
     return minScore, minScoreFreq, scheme, fivePlus, fivePlusNoDuplicate, usedTrans, scoreCount, sDev, q0, q1, q2, q3, q4, q5, avg
 
 
@@ -175,7 +175,7 @@ def Repeater(algorithm, runs, nationtxt):
 
 
 def branchNBound(nationtxt, bound, scheme):
-    
+
     """
     Depth first, check upper bound and neighbors
     """
@@ -183,24 +183,24 @@ def branchNBound(nationtxt, bound, scheme):
     index = 0
     costs = 0
     numTransmitters = 7
-    
+
     transmitterCosts = scheme
     nation = nationLoader(nationtxt)
-   
-    
+
+
     neighborCount = {}
     for province in nation:
         neighborCount.update({province:len(nation.get(province)[0])})
-   
-    
+
+
     #~ neighborCountSorted = sorted(neighborCount, key=neighborCount.__getitem__)
-   
+
     neighborCountSorted = sorted(neighborCount, key=neighborCount.__getitem__, reverse=True)
-        
+
     for key in neighborCountSorted:
         provinces.append(key)
     #~ print provinces
-    
+
     upperbound = bound
     #~ print bound
     #~ print bound
@@ -208,22 +208,22 @@ def branchNBound(nationtxt, bound, scheme):
 
 
     solution = []
-    
-    
+
+
     counter = 0
-   
-    
-   
-        
+
+
+
+
 
     while index >= 0:
-        
-        
+
+
         counter += 1
         if counter % 100000000 == 0:
             print counter
             print "Now at:", nation
-        
+
 
         if index == -1:
             break
@@ -232,7 +232,7 @@ def branchNBound(nationtxt, bound, scheme):
         if nation[provinces[index]][1] == numTransmitters:
             costs, index = updateTransmitter(nation, True, scheme, provinces, costs, index)
             continue
-            
+
         else:
             costs, index = updateTransmitter(nation, False, scheme, provinces, costs, index)
 
@@ -265,23 +265,23 @@ def branchNBound(nationtxt, bound, scheme):
 
         index += 1
 
-                
+
     usedTrans = []
     fivePlus = 0
     fivePlusNoDuplicate = 0
-    
+
     for nation in solution:
-        
+
         one = 0
-        two = 0 
+        two = 0
         three = 0
         four = 0
         five = 0
         six = 0
         seven = 0
 
-        for province in nation: 
-            
+        for province in nation:
+
             if nation[province][1] == 1:
                 one += 1
             if nation[province][1] == 2:
@@ -296,26 +296,26 @@ def branchNBound(nationtxt, bound, scheme):
                 six += 1
             if nation[province][1] == 7:
                 seven += 1
-                
-        
+
+
         if five > 0 or six > 0 or seven > 0:
             fivePlus += 1
             if transmitterCosts[3] != transmitterCosts[4]:
                 fivePlusNoDuplicate += 1
-        
-        usedTrans.append([one, two, three, four, five, six, seven])  
+
+        usedTrans.append([one, two, three, four, five, six, seven])
 
     return fivePlus, fivePlusNoDuplicate, usedTrans, upperbound, len(solution), counter
         #~ f.write("\n Used Transmitters: "+ str(one)+" "+ str(two)+" "+ str(three)+" "+ str(four)+" "+ str(five)+" "+ str(six)+" "+ str(seven)+"\n Cost: "+str(upperbound)+"\n Number of solutions: "+str(len(solution))+"\n Iterations: "+str(counter)+"\n"+"\n"+"\n"+"\n")
-        
+
         #~ print "transmitter frequecies:", one, two, three, four, five, six, seven
         #~ print "Solutions:", solution
         #~ print "Cost:", upperbound
         #~ print "Number of solutions:", len(solution)
         #~ print "Iterations:", counter
-      
+
 def branchNBound2(nationtxt, bound, scheme):
-    
+
     """
     Depth first, check upper bound and neighbors
     """
@@ -323,40 +323,40 @@ def branchNBound2(nationtxt, bound, scheme):
 
     nation = nationLoader(nationtxt)
     transmitterCosts = scheme
-    
+
     neighborCount = {}
     for province in nation:
         neighborCount.update({province:len(nation.get(province)[0])})
-        
-    
+
+
     neighborCountSorted = sorted(neighborCount, key=neighborCount.__getitem__)
-   
+
     #~ neighborCountSorted = sorted(neighborCount, key=neighborCount.__getitem__, reverse=True)
-        
+
     for key in neighborCountSorted:
         provinces.append(key)
     #~ print provinces
-    
+
     upperbound = bound
     #~ print bound
 
-  
+
 
     solution = []
-    
-    
+
+
     counter = 0
-    
-   
-        
- 
+
+
+
+
     while index >= 0:
-        
+
         counter += 1
         if counter % 100000000 == 0:
             print counter
             print "Now at:", nation
-        
+
 
         if index == -1:
             break
@@ -365,7 +365,7 @@ def branchNBound2(nationtxt, bound, scheme):
         if nation[provinces[index]][1] == numTransmitters:
             costs, index = updateTransmitter(nation, True, scheme, provinces, costs, index)
             continue
-            
+
         else:
             costs, index = updateTransmitter(nation, False, scheme, provinces, costs, index)
 
@@ -399,23 +399,23 @@ def branchNBound2(nationtxt, bound, scheme):
         index += 1
 
 
-                
+
     usedTrans = []
     fivePlus = 0
     fivePlusNoDuplicate = 0
-    
+
     for nation in solution:
-        
+
         one = 0
-        two = 0 
+        two = 0
         three = 0
         four = 0
         five = 0
         six = 0
         seven = 0
 
-        for province in nation: 
-            
+        for province in nation:
+
             if nation[province][1] == 1:
                 one += 1
             if nation[province][1] == 2:
@@ -430,38 +430,38 @@ def branchNBound2(nationtxt, bound, scheme):
                 six += 1
             if nation[province][1] == 7:
                 seven += 1
-                
-        
+
+
         if five > 0 or six > 0 or seven > 0:
             fivePlus += 1
             if transmitterCosts[3] != transmitterCosts[4]:
                 fivePlusNoDuplicate += 1
-        
-        usedTrans.append([one, two, three, four, five, six, seven])  
+
+        usedTrans.append([one, two, three, four, five, six, seven])
 
     return counter
 def kostenschema():
     kostenschemalen = 7
     schema = []
-    
+
     for i in range(kostenschemalen):
         x = random.randint(1,50)
-        
+
         schema.append(x)
-        
-        
-    
+
+
+
     schema.sort()
-    
+
     return schema
 
 def updateTransmitter(nation, previous, scheme, provinces, costs, index):
     """
     Assign transmitter and update costs
     """
- 
+
     transmitterCosts = scheme
-   
+
 
     # Subtract costs of current transmitter from costs
     if nation[provinces[index]][1] != 0:
@@ -469,33 +469,36 @@ def updateTransmitter(nation, previous, scheme, provinces, costs, index):
 
     # If previous, set transmitter f current province to 0 and set index to previous province
     if previous:
-        
+
         nation[provinces[index]][1] = 0
         index -= 1
-        
+
     # Else, assign next transmitter to province and update costs
     else:
         nation[provinces[index]][1] += 1
         costs += transmitterCosts[nation[provinces[index]][1] - 1]
-    
+
     return costs, index
-        
- 
+
+
 
 
 
 def main(reps, doubleBranch):
     h = 1
     maxIterations = 0
+    minIterations = 10**20
     fivePlusCount = 0
     fivePlusNoDuplicateCount = 0
     fivePlusCountG = 0
     fivePlusNoDuplicateCountG = 0
     hardestScheme = 0
+    easiestScheme = 0
     hardestSchemeG = 0
     curMinScoreFreq = 10000
     greedyFail = 0
     maxSDev = 0
+    minSDev = 0
     sDevl = []
     iterl = []
     iterl2 = []
@@ -513,90 +516,136 @@ def main(reps, doubleBranch):
 
 
     for i in range(reps):
-        
+
         print h
         provinces = []
         index = 0
         costs = 0
         numTransmitters = 7
-        
-        
+
+
         bound, minScoreFreq, scheme, fivePlusG, fivePlusNoDuplicateG, usedTransG, scoreCount, sDev, q0, q1, q2, q3, q4, q5, avg = Repeater(greedyRandom, 10000, "Germany.txt")
         #~ print q0, q1, q2, q3, q4, q5, avg, sDev
-        
-        
-        
+
+
+
         fivePlus, fivePlusNoDuplicate, usedTransmitters, lowCost, nSolutions, iterations = branchNBound("TXT/Germany.txt", bound, scheme)
-        
-        
-  
-        
+
+
+
+
         if doubleBranch == 1:
             iterations2 = branchNBound2("TXT/Germany.txt", bound, scheme)
             iterl2.append(iterations2)
-            
+
         sDevl.append(sDev)
         iterl.append(iterations)
-        
-  
-            
-        
+
+
+
+
         q0l.append(q0)
         q1l.append(q1)
         q2l.append(q2)
         q3l.append(q3)
         q4l.append(q4)
         q5l.append(q5)
-        
+
         avgl.append(avg)
         scorel.append(lowCost)
-        
+
         fivePlusCount += fivePlus
         fivePlusNoDuplicateCount += fivePlusNoDuplicate
-        
+
         fivePlusCountG += fivePlusG
         fivePlusNoDuplicateCountG += fivePlusNoDuplicateG
-        
+
         if lowCost != bound:
             greedyFail += 1
-        
+
         print "iterations",iterations
-        
+
         if doubleBranch == 1:
             print iterations2
-        
+
         if doubleBranch != 1:
             if iterations > maxIterations:
                 maxIterations = iterations
                 hardestScheme = scheme
                 maxSDev = sDev
-                
-                f.write("\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
+
+
+                f.write("\n HARD "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
                 "\n average transitter type cost: "+str(avg)+"\n\n lowest score branch and bound: "+str(lowCost)+
                 "\n lowest score greedy: "+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+
                 "\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+
                 "\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n")
-                
-                print "\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost: "+str(avg)+"\n\n lowest score branch and bound: "+str(lowCost)+"\n lowest score greedy: "+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
-                
+
+                print "\n HARD "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost: "+str(avg)+"\n\n lowest score branch and bound: "+str(lowCost)+"\n lowest score greedy: "+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
+            if iterations < minIterations:
+                minIterations = iterations
+                easiestScheme = scheme
+                minSDev = sDev
+
+                f.write("\n EASY "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
+                "\n average transitter type cost: "+str(avg)+"\n\n lowest score branch and bound: "+str(lowCost)+
+                "\n lowest score greedy: "+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+
+                "\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+
+                "\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n")
+
+                print "\n EASY "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost: "+str(avg)+"\n\n lowest score branch and bound: "+str(lowCost)+"\n lowest score greedy: "+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
+
         #~ +"\n branchIterations2: "+str(iterations2)+
         if doubleBranch == 1:
             if iterations2 > maxIterations:
                 maxIterations = iterations2
                 hardestScheme = scheme
                 maxSDev = sDev
-            if iterations > maxIterations:
-                maxIterations = iterations
-                hardestScheme = scheme
-                maxSDev = sDev
-                
-                f.write("\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
+
+                f.write("\n HARD "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
                 "\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+
                 "\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+
                 "\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+
                 "\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n")
-                print "\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+"\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
-        
+                print "\n HARD "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+"\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
+            if iterations > maxIterations:
+                maxIterations = iterations
+                hardestScheme = scheme
+                maxSDev = sDev
+
+
+                f.write("\n HARD "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
+                "\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+
+                "\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+
+                "\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+
+                "\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n")
+                print "\n HARD "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+"\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
+
+
+            if iterations < minIterations:
+                minIterations = iterations
+                easiestScheme = scheme
+                minSDev = sDev
+
+
+                f.write("\n EASY "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
+                "\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+
+                "\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+
+                "\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+
+                "\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n")
+                print "\n EASY "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+"\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
+            if iterations2 < minIterations:
+                minIterations = iterations2
+                easiestScheme = scheme
+                minSDev = sDev
+
+                f.write("\n EASY "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+
+                "\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+
+                "\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+
+                "\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+
+                "\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n")
+                print "\n EASY "+"\n Scheme: "+str(scheme)+"\n transmitter type cost standard deviation: "+str(sDev)+"\n average transitter type cost"+str(avg)+"\n\n lowest score branch and bound"+str(lowCost)+"\n lowest score greedy"+str(bound)+"\n\n branch and bound iterations: "+str(iterations)+"\n\n branch and bound iterations 2: "+str(iterations2)+"\n branch and bound amount of solutions: "+str(nSolutions)+"\n branch and bound used transmitter types: "+str(usedTransmitters)+"\n\n instances used transmitter type 5+: "+str(fivePlus)+"\n instances used transmitter type 5+, no duplicate transmitter type costs: "+str(fivePlusNoDuplicate)+"\n\n\n"
+
         #~ if minScoreFreq < curMinScoreFreq:
             #~ curMinScoreFreq = minScoreFreq
             #~ hardestSchemeG = scheme
@@ -604,23 +653,34 @@ def main(reps, doubleBranch):
             #~ f.write("\n greedy")
             #~ f.write("\n Scheme: "+str(scheme)+"\n sDev: "+str(sDev)+"\n\n greedyLowestCost: "+str(bound)+"\n minScoreFreq: "+str(minScoreFreq)+"\n scoreCount: "+str(scoreCount)+"\n greedyUsedTrans"+str(usedTransG)+"\n greedyFivePlus: "+str(fivePlusG)+"\n greedyFivePlusNoDuplicate: "+str(fivePlusNoDuplicateG)+"\n\n branchLowestCost: "+str(lowCost)+"\n branchIterations: "+str(iterations)+"\n branchIterations2: "+str(iterations2)+"\n branchNSolutions: "+str(nSolutions)+"\n branchTransUsed: "+str(usedTransmitters)+"\n fivePlus: "+str(fivePlus)+"\n fivePlusNoDuplicate: "+str(fivePlusNoDuplicate)+"\n\n\n")
             #~ print "\n Scheme: "+str(scheme)+"\n sDev: "+str(sDev)+"\n\n greedyLowestCost: "+str(bound)+"\n minScoreFreq: "+str(minScoreFreq)+"\n scoreCount: "+str(scoreCount)+"\n greedyUsedTrans"+str(usedTransG)+"\n greedyFivePlus: "+str(fivePlusG)+"\n greedyFivePlusNoDuplicate: "+str(fivePlusNoDuplicateG)+"\n\n branchLowestCost: "+str(lowCost)+"\n branchIterations: "+str(iterations)+"\n branchIterations2: "+str(iterations2)+"\n branchNSolutions: "+str(nSolutions)+"\n branchTransUsed: "+str(usedTransmitters)+"\n fivePlus: "+str(fivePlus)+"\n fivePlusNoDuplicate: "+str(fivePlusNoDuplicate)+"\n\n\n"
-        
+
         h += 1
-        
-    f.write("\n Hardest Branch")   
+
+    f.write("\n Hardest Branch")
     print "Hardest Branch"
-    
+
     f.write("\n maxIterations: "+str(maxIterations)+"\n fivePlusCount: "+str(fivePlusCount)+
     "\n fivePlusNoDuplicateCount: "+str(fivePlusNoDuplicateCount)+"\n hardestScheme: "+str(hardestScheme)+
     "\n maximum transmitter type cost standard deviation: "+str(maxSDev)+"\n\n"+"\n times lowest greedy score != lowest BnB score"+str(greedyFail))
-    
+
     print "\n maxIterations: "+str(maxIterations)+"\n fivePlusCount: "+str(fivePlusCount)+"\n fivePlusNoDuplicateCount: "+str(fivePlusNoDuplicateCount)+"\n hardestScheme: "+str(hardestScheme)+"\n maximum transmitter type cost standard deviation: "+str(maxSDev)+"\n times lowest greedy score != lowest BnB score: "+str(greedyFail)+"\n\n"
 
-    #~ f.write("\n Hardest Greedy")   
+
+    f.write("\n easiest Branch")
+    print "Easiest Branch"
+
+    f.write("\n minIterations: "+str(minIterations)+"\n fivePlusCount: "+str(fivePlusCount)+
+    "\n fivePlusNoDuplicateCount: "+str(fivePlusNoDuplicateCount)+"\n easiestScheme: "+str(easiestScheme)+
+    "\n minimum transmitter type cost standard deviation: "+str(minSDev)+"\n\n"+"\n times lowest greedy score != lowest BnB score"+str(greedyFail))
+
+    print "\n minIterations: "+str(minIterations)+"\n fivePlusCount: "+str(fivePlusCount)+"\n fivePlusNoDuplicateCount: "+str(fivePlusNoDuplicateCount)+"\n easiestScheme: "+str(easiestScheme)+"\n minimum transmitter type cost standard deviation: "+str(minSDev)+"\n times lowest greedy score != lowest BnB score: "+str(greedyFail)+"\n\n"
+
+
+    #~ f.write("\n Hardest Greedy")
     #~ print "Hardest Greedy"
     #~ f.write("\n curMinScoreFreq: "+str(curMinScoreFreq)+"\n fivePlusCountG: "+str(fivePlusCountG)+"\n fivePlusNoDuplicateCountG: "+str(fivePlusNoDuplicateCountG)+"\n hardestScheme: "+str(hardestSchemeG)+"\n greedyFail: "+str(greedyFail))
     #~ print "\n curMinScoreFreq: "+str(curMinScoreFreq)+"\n fivePlusCountG: "+str(fivePlusCountG)+"\n fivePlusNoDuplicateCountG: "+str(fivePlusNoDuplicateCountG)+"\n hardestScheme: "+str(hardestSchemeG)+"\n greedyFail: "+str(greedyFail)
-    
+
 
     f.close()
 
@@ -710,7 +770,7 @@ def main(reps, doubleBranch):
     ax1.set_title("average cost/lowest score")
     ax1.set_xlabel("avg cost", fontsize = 26)
     ax1.set_ylabel("lowest score", fontsize = 24)
-    ax1.tick_params(labelsize = 18) 
+    ax1.tick_params(labelsize = 18)
     plt.savefig('plots/avg.png', bbox_inches='tight')
 
 
@@ -793,8 +853,8 @@ def main(reps, doubleBranch):
 
 
 
-    plt.show() 
-    
-    
-    
+    plt.show()
+
+
+
 main(2, 0)
