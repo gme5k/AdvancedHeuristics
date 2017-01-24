@@ -1,2 +1,42 @@
 
- branch
+ Scheme: [1, 4, 10, 10, 21, 29, 30]
+ transmitter type cost standard deviation: 10.8496214549
+ average transitter type cost: 15.0
+
+ lowest score branch and bound: 61
+ lowest score greedy: 61
+
+ branch and bound iterations: 17822
+ branch and bound amount of solutions: 8
+ branch and bound used transmitter types: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 1, 2, 0, 0, 0]]
+
+ instances used transmitter type 5+: 0
+ instances used transmitter type 5+, no duplicate transmitter type costs: 0
+
+
+
+ Scheme: [3, 6, 12, 15, 16, 21, 34]
+ transmitter type cost standard deviation: 9.49758293634
+ average transitter type cost: 15.2857142857
+
+ lowest score branch and bound: 96
+ lowest score greedy: 96
+
+ branch and bound iterations: 37933
+ branch and bound amount of solutions: 4
+ branch and bound used transmitter types: [[7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0], [7, 6, 2, 1, 0, 0, 0]]
+
+ instances used transmitter type 5+: 0
+ instances used transmitter type 5+, no duplicate transmitter type costs: 0
+
+
+
+ Hardest Branch
+ maxIterations: 37933
+ fivePlusCount: 0
+ fivePlusNoDuplicateCount: 0
+ hardestScheme: [3, 6, 12, 15, 16, 21, 34]
+ maximum transmitter type cost standard deviation: 9.49758293634
+
+
+ times lowest greedy score != lowest BnB score0
