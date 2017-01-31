@@ -5,6 +5,8 @@ from jsonDeepCopy import *
 from randScoreFunction import *
 from scoreFunction import *
 import matplotlib.pyplot as plt
+import numpy as np
+
 
 
 
@@ -480,7 +482,51 @@ def updateTransmitter(nation, previous, scheme, provinces, costs, index):
 
     return costs, index
 
+def avgr(diffs, iters):
+   
+    uniqueDiffs = []
+    avgIters = []
+    
+    diffsFinal = []
+    itersFinal = []
+    
+    
+    for i in range(0, len(diffs)):
+        som = iters[i]
+        count = 1
+        
+        if diffs[i] not in uniqueDiffs:
+            uniqueDiffs.append(diffs[i])
+            
+            for j in range(i + 1, len(diffs)):
+                
+                if diffs[j] == diffs[i]:
+                    som += iters[j]
+                    count += 1
+                
+            
+            avg = float(som) / count
+            avgIters.append(avg)
+    
+    diffAvg = {}
+    diffAvgSorted = {}
+    
+    for i in range(len(avgIters)):
+        diffAvg.update({uniqueDiffs[i]: avgIters[i]})
+    #~ print diffAvg
+    
+    #~ for key in sorted(diffAvg.iterkeys()):
+        #~ diffAvgSorted.update({key: diffAvg[key]})
+    
+    #~ print diffAvg
+    #~ print diffAvgSorted
+    
+    for key, value in sorted(diffAvg.iteritems()):
+        diffsFinal.append(key)
+        itersFinal.append(value)
 
+        
+    return diffsFinal, itersFinal
 
 
 
@@ -509,10 +555,19 @@ def main(reps, doubleBranch):
     q3l = []
     q4l = []
     q5l = []
-
+    
+    q0avg = []
+    q1avg = []
+    q2avg = []
+    q3avg = []
+    q4avg = []
+    q5avg = []
+    
     avgl = []
     scorel = []
-
+   
+    schemesComplete = []
+    
 
 
     for i in range(reps):
@@ -524,23 +579,24 @@ def main(reps, doubleBranch):
         numTransmitters = 7
 
 
-        bound, minScoreFreq, scheme, fivePlusG, fivePlusNoDuplicateG, usedTransG, scoreCount, sDev, q0, q1, q2, q3, q4, q5, avg = Repeater(greedyRandom, 10000, "Germany.txt")
+        bound, minScoreFreq, scheme, fivePlusG, fivePlusNoDuplicateG, usedTransG, scoreCount, sDev, q0, q1, q2, q3, q4, q5, avg = Repeater(greedyRandom, 10000, "Nederland.txt")
         #~ print q0, q1, q2, q3, q4, q5, avg, sDev
 
 
 
-        fivePlus, fivePlusNoDuplicate, usedTransmitters, lowCost, nSolutions, iterations = branchNBound("TXT/Germany.txt", bound, scheme)
+        fivePlus, fivePlusNoDuplicate, usedTransmitters, lowCost, nSolutions, iterations = branchNBound("TXT/Nederland.txt", bound, scheme)
 
 
 
 
         if doubleBranch == 1:
-            iterations2 = branchNBound2("TXT/Germany.txt", bound, scheme)
+            iterations2 = branchNBound2("TXT/Nederland.txt", bound, scheme)
             iterl2.append(iterations2)
 
         sDevl.append(sDev)
+        
         iterl.append(iterations)
-
+        schemesComplete.append(scheme)
 
 
 
@@ -550,9 +606,13 @@ def main(reps, doubleBranch):
         q3l.append(q3)
         q4l.append(q4)
         q5l.append(q5)
+        
 
+        
         avgl.append(avg)
         scorel.append(lowCost)
+        
+        
 
         fivePlusCount += fivePlus
         fivePlusNoDuplicateCount += fivePlusNoDuplicate
@@ -655,7 +715,59 @@ def main(reps, doubleBranch):
             #~ print "\n Scheme: "+str(scheme)+"\n sDev: "+str(sDev)+"\n\n greedyLowestCost: "+str(bound)+"\n minScoreFreq: "+str(minScoreFreq)+"\n scoreCount: "+str(scoreCount)+"\n greedyUsedTrans"+str(usedTransG)+"\n greedyFivePlus: "+str(fivePlusG)+"\n greedyFivePlusNoDuplicate: "+str(fivePlusNoDuplicateG)+"\n\n branchLowestCost: "+str(lowCost)+"\n branchIterations: "+str(iterations)+"\n branchIterations2: "+str(iterations2)+"\n branchNSolutions: "+str(nSolutions)+"\n branchTransUsed: "+str(usedTransmitters)+"\n fivePlus: "+str(fivePlus)+"\n fivePlusNoDuplicate: "+str(fivePlusNoDuplicate)+"\n\n\n"
 
         h += 1
+    
+    
+    
+    
+    
+    
+    
+    schemeIters = {}
+    schemeItersSorted = {}
+    print "\n\n"
+    
+    for i in range(len(iterl)):
+        schemeIters.update({iterl[i]: schemesComplete[i]})
+    
+        
+    print "\n\n"
+    
+    
+    
+    
+    #~ for key in sorted(schemeIters):
+        #~ vallist.append(schemeIters[key])
 
+
+
+    #~ for k in vallist:    
+        #~ for i in schemeIters:
+            #~ if schemeIters[i] == k:
+                #~ keylist.append(i)
+
+    #~ for i in range(len(keylist)):
+        #~ print keylist[i], vallist[i]
+        
+    print "schemes / iterations sorted"
+    f.write("\n"+"schemes / iterations sorted")
+    
+    for key, value in sorted(schemeIters.iteritems()):
+        print key, value
+        f.write("\n"+str(key)+": "+str(value))
+        
+        
+   
+        
+    print "\n\n"
+    f.write("\n\n")
+    
+    
+
+
+        
+   
+        
+        
     f.write("\n Hardest Branch")
     print "Hardest Branch"
 
@@ -674,7 +786,12 @@ def main(reps, doubleBranch):
     "\n minimum transmitter type cost standard deviation: "+str(minSDev)+"\n\n"+"\n times lowest greedy score != lowest BnB score"+str(greedyFail))
 
     print "\n minIterations: "+str(minIterations)+"\n fivePlusCount: "+str(fivePlusCount)+"\n fivePlusNoDuplicateCount: "+str(fivePlusNoDuplicateCount)+"\n easiestScheme: "+str(easiestScheme)+"\n minimum transmitter type cost standard deviation: "+str(minSDev)+"\n times lowest greedy score != lowest BnB score: "+str(greedyFail)+"\n\n"
-
+    
+    #~ print schemeIters
+    #~ print schemeItersSorted
+    for i in schemeItersSorted:
+        f.write(str(i)+": "+str(schemeItersSorted[i])+"\n")
+        print str(i)+": "+str(schemeItersSorted[i])+"\n"
 
     #~ f.write("\n Hardest Greedy")
     #~ print "Hardest Greedy"
@@ -683,13 +800,24 @@ def main(reps, doubleBranch):
 
 
     f.close()
+    
 
+    
+    
 
-
+    
+    
     g, (ax1) = plt.subplots(1)
     ax1.scatter(q0l, iterl, color = "black")
+    #~ print q0l
+    #~ print iterl
+    ax1.plot(avgr(q0l, iterl)[0], avgr(q0l, iterl)[1], color = "red")
+    #~ print avgr(q0l, iterl)[0]
+    #~ print avgr(q0l, iterl)[1]
+   
     if doubleBranch == 1:
         ax1.scatter(q0l, iterl2, color = "red")
+        
     ax1.set_title("1/2")
     ax1.set_xlabel("difference", fontsize = 26)
     ax1.set_ylabel("iterations", fontsize = 24)
@@ -699,6 +827,7 @@ def main(reps, doubleBranch):
 
     h, (ax1) = plt.subplots(1)
     ax1.scatter(q1l, iterl, color = "black")
+    ax1.plot(avgr(q1l, iterl)[0], avgr(q1l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q1l, iterl2, color = "red")
     ax1.set_title("2/3")
@@ -710,6 +839,7 @@ def main(reps, doubleBranch):
 
     i, (ax1) = plt.subplots(1)
     ax1.scatter(q2l, iterl, color = "black")
+    ax1.plot(avgr(q2l, iterl)[0], avgr(q2l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q2l, iterl2, color = "red")
     ax1.set_title("3/4")
@@ -721,6 +851,7 @@ def main(reps, doubleBranch):
 
     j, (ax1) = plt.subplots(1)
     ax1.scatter(q3l, iterl, color = "black")
+    ax1.plot(avgr(q3l, iterl)[0], avgr(q3l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q3l, iterl2, color = "red")
     ax1.set_title("4/5")
@@ -732,6 +863,7 @@ def main(reps, doubleBranch):
 
     k, (ax1) = plt.subplots(1)
     ax1.scatter(q4l, iterl, color = "black")
+    ax1.plot(avgr(q4l, iterl)[0], avgr(q4l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q4l, iterl2, color = "red")
     ax1.set_title("5/6")
@@ -743,6 +875,7 @@ def main(reps, doubleBranch):
 
     l, (ax1) = plt.subplots(1)
     ax1.scatter(q5l, iterl, color = "black")
+    ax1.plot(avgr(q5l, iterl)[0], avgr(q5l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q5l, iterl2, color = "red")
     ax1.set_title("6/7")
@@ -751,9 +884,10 @@ def main(reps, doubleBranch):
     ax1.tick_params(labelsize = 18)
     #~ ax1.set_yscale('log')
     plt.savefig('plots/6-7.png', bbox_inches='tight')
-
+#~ ____________________________________________________________________-
     m, (ax1) = plt.subplots(1)
     ax1.scatter(sDevl, iterl, color = "black")
+    ax1.plot(avgr(sDevl, iterl)[0], avgr(sDevl, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(sDevl, iterl2, color = "red")
     ax1.set_title("sDev")
@@ -765,6 +899,7 @@ def main(reps, doubleBranch):
 
     n, (ax1) = plt.subplots(1)
     ax1.scatter(avgl, scorel, color = "black")
+    ax1.plot(avgr(avgl, scorel)[0], avgr(avgl, scorel)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(avgl, iterl2, color = "red")
     ax1.set_title("average cost/lowest score")
@@ -773,9 +908,10 @@ def main(reps, doubleBranch):
     ax1.tick_params(labelsize = 18)
     plt.savefig('plots/avg.png', bbox_inches='tight')
 
-
+#~ ____________________________________________________________________-
     o, (ax1) = plt.subplots(1)
     ax1.scatter(q0l, iterl, color = "black")
+    ax1.plot(avgr(q0l, iterl)[0], avgr(q0l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q0l, iterl2, color = "red")
     ax1.set_title("1/2")
@@ -787,6 +923,7 @@ def main(reps, doubleBranch):
 
     p, (ax1) = plt.subplots(1)
     ax1.scatter(q1l, iterl, color = "black")
+    ax1.plot(avgr(q1l, iterl)[0], avgr(q1l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q1l, iterl2, color = "red")
     ax1.set_title("2/3")
@@ -798,6 +935,7 @@ def main(reps, doubleBranch):
 
     q, (ax1) = plt.subplots(1)
     ax1.scatter(q2l, iterl, color = "black")
+    ax1.plot(avgr(q2l, iterl)[0], avgr(q2l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q2l, iterl2, color = "red")
     ax1.set_title("3/4")
@@ -809,6 +947,7 @@ def main(reps, doubleBranch):
 
     r, (ax1) = plt.subplots(1)
     ax1.scatter(q3l, iterl, color = "black")
+    ax1.plot(avgr(q3l, iterl)[0], avgr(q3l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q3l, iterl2, color = "red")
     ax1.set_title("4/5")
@@ -820,6 +959,7 @@ def main(reps, doubleBranch):
 
     s, (ax1) = plt.subplots(1)
     ax1.scatter(q4l, iterl, color = "black")
+    ax1.plot(avgr(q4l, iterl)[0], avgr(q4l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q4l, iterl2, color = "red")
     ax1.set_title("5/6")
@@ -831,6 +971,7 @@ def main(reps, doubleBranch):
 
     t, (ax1) = plt.subplots(1)
     ax1.scatter(q5l, iterl, color = "black")
+    ax1.plot(avgr(q5l, iterl)[0], avgr(q5l, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(q5l, iterl2, color = "red")
     ax1.set_title("6/7")
@@ -839,9 +980,10 @@ def main(reps, doubleBranch):
     ax1.tick_params(labelsize = 18)
     ax1.set_yscale('log')
     plt.savefig('plots/6-7-log.png', bbox_inches='tight')
-
+#~ ____________________________________________________________________-
     u, (ax1) = plt.subplots(1)
     ax1.scatter(sDevl, iterl, color = "black")
+    ax1.plot(avgr(sDevl, iterl)[0], avgr(sDevl, iterl)[1], color = "red")
     if doubleBranch == 1:
         ax1.scatter(sDevl, iterl2, color = "red")
     ax1.set_title("sDev")
@@ -850,11 +992,24 @@ def main(reps, doubleBranch):
     ax1.tick_params(labelsize = 18)
     ax1.set_yscale('log')
     plt.savefig('plots/sDev-log.png', bbox_inches='tight')
+    
+    v, (ax1) = plt.subplots(1)
+    ax1.scatter(avgl, scorel, color = "black")
+    ax1.plot(avgr(avgl, scorel)[0], avgr(avgl, scorel)[1], color = "red")
+    if doubleBranch == 1:
+        ax1.scatter(avgl, iterl2, color = "red")
+    ax1.set_title("average cost/lowest score")
+    ax1.set_xlabel("avg cost", fontsize = 26)
+    ax1.set_ylabel("lowest score", fontsize = 24)
+    ax1.tick_params(labelsize = 18)
+    ax1.set_yscale('log')
+    plt.savefig('plots/avg-log.png', bbox_inches='tight')
+
+#~ ____________________________________________________________________-
+
+   
 
 
-
-    plt.show()
-
-
-
-main(2, 0)
+    
+main(200, 0)
+#~ print avgr([5, 5, 5, 2, 6, 7, 7, 8, 4, 6, 7, 5, 3, 2, 5, 8, 9, 5, 5, 3, 3],[5, 6, 3, 8, 4, 7, 4, 7, 8, 4, 7, 3, 1, 6, 9, 0, 5, 2, 6, 8, 7])
