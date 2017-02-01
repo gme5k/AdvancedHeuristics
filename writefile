@@ -1,13 +1,13 @@
 
  HARD 
- Scheme: [12, 16, 22, 41, 42, 43, 46]
- transmitter type cost standard deviation: 13.3813760313
- average transitter type cost: 31.7142857143
+ Scheme: [7, 8, 12, 13, 16, 18, 50]
+ transmitter type cost standard deviation: 13.677032737
+ average transitter type cost: 17.7142857143
 
- lowest score branch and bound: 215
- lowest score greedy: 215
+ lowest score branch and bound: 108
+ lowest score greedy: 108
 
- branch and bound iterations: 9622
+ branch and bound iterations: 15538
  branch and bound amount of solutions: 2
  branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
 
@@ -17,14 +17,14 @@
 
 
  EASY 
- Scheme: [12, 16, 22, 41, 42, 43, 46]
- transmitter type cost standard deviation: 13.3813760313
- average transitter type cost: 31.7142857143
+ Scheme: [7, 8, 12, 13, 16, 18, 50]
+ transmitter type cost standard deviation: 13.677032737
+ average transitter type cost: 17.7142857143
 
- lowest score branch and bound: 215
- lowest score greedy: 215
+ lowest score branch and bound: 108
+ lowest score greedy: 108
 
- branch and bound iterations: 9622
+ branch and bound iterations: 15538
  branch and bound amount of solutions: 2
  branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
 
@@ -34,31 +34,14 @@
 
 
  HARD 
- Scheme: [2, 16, 16, 18, 20, 34, 39]
- transmitter type cost standard deviation: 11.4232130295
- average transitter type cost: 20.7142857143
+ Scheme: [9, 14, 21, 26, 33, 36, 37]
+ transmitter type cost standard deviation: 10.1619538536
+ average transitter type cost: 25.1428571429
 
- lowest score branch and bound: 124
- lowest score greedy: 124
+ lowest score branch and bound: 176
+ lowest score greedy: 176
 
- branch and bound iterations: 108340
- branch and bound amount of solutions: 2
- branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
-
- instances used transmitter type 5+: 0
- instances used transmitter type 5+, no duplicate transmitter type costs: 0
-
-
-
- EASY 
- Scheme: [10, 12, 12, 13, 18, 21, 45]
- transmitter type cost standard deviation: 11.3101002359
- average transitter type cost: 18.7142857143
-
- lowest score branch and bound: 135
- lowest score greedy: 135
-
- branch and bound iterations: 7785
+ branch and bound iterations: 22308
  branch and bound amount of solutions: 2
  branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
 
@@ -68,14 +51,14 @@
 
 
  HARD 
- Scheme: [3, 11, 45, 46, 47, 47, 50]
- transmitter type cost standard deviation: 18.2510832779
- average transitter type cost: 35.5714285714
+ Scheme: [13, 17, 26, 30, 31, 39, 45]
+ transmitter type cost standard deviation: 10.4841960754
+ average transitter type cost: 28.7142857143
 
- lowest score branch and bound: 229
- lowest score greedy: 229
+ lowest score branch and bound: 224
+ lowest score greedy: 224
 
- branch and bound iterations: 275396
+ branch and bound iterations: 28653
  branch and bound amount of solutions: 2
  branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
 
@@ -85,65 +68,14 @@
 
 
  EASY 
- Scheme: [1, 5, 6, 6, 35, 36, 44]
- transmitter type cost standard deviation: 17.0209954384
- average transitter type cost: 19.0
+ Scheme: [15, 16, 19, 27, 42, 43, 44]
+ transmitter type cost standard deviation: 12.2923570082
+ average transitter type cost: 29.4285714286
 
- lowest score branch and bound: 44
- lowest score greedy: 44
+ lowest score branch and bound: 207
+ lowest score greedy: 207
 
- branch and bound iterations: 6581
- branch and bound amount of solutions: 22
- branch and bound used transmitter types: [[5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 1, 3, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 1, 3, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0], [5, 3, 2, 2, 0, 0, 0]]
-
- instances used transmitter type 5+: 0
- instances used transmitter type 5+, no duplicate transmitter type costs: 0
-
-
-
- EASY 
- Scheme: [7, 10, 10, 17, 18, 40, 44]
- transmitter type cost standard deviation: 13.9019892865
- average transitter type cost: 20.8571428571
-
- lowest score branch and bound: 112
- lowest score greedy: 112
-
- branch and bound iterations: 6080
- branch and bound amount of solutions: 2
- branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
-
- instances used transmitter type 5+: 0
- instances used transmitter type 5+, no duplicate transmitter type costs: 0
-
-
-
- EASY 
- Scheme: [16, 17, 18, 20, 37, 43, 47]
- transmitter type cost standard deviation: 12.5095881594
- average transitter type cost: 28.2857142857
-
- lowest score branch and bound: 205
- lowest score greedy: 205
-
- branch and bound iterations: 3434
- branch and bound amount of solutions: 2
- branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
-
- instances used transmitter type 5+: 0
- instances used transmitter type 5+, no duplicate transmitter type costs: 0
-
-
-
- EASY 
- Scheme: [2, 3, 4, 8, 27, 38, 45]
- transmitter type cost standard deviation: 16.8474548432
- average transitter type cost: 18.1428571429
-
- lowest score branch and bound: 39
- lowest score greedy: 39
-
- branch and bound iterations: 2535
+ branch and bound iterations: 2310
  branch and bound amount of solutions: 2
  branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
 
@@ -153,65 +85,31 @@
 
 
  HARD 
- Scheme: [4, 34, 35, 37, 38, 46, 48]
- transmitter type cost standard deviation: 13.436168064
- average transitter type cost: 34.5714285714
-
- lowest score branch and bound: 264
- lowest score greedy: 264
-
- branch and bound iterations: 735406
- branch and bound amount of solutions: 2
- branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
-
- instances used transmitter type 5+: 0
- instances used transmitter type 5+, no duplicate transmitter type costs: 0
-
-
-
- EASY 
- Scheme: [9, 9, 9, 15, 18, 27, 41]
- transmitter type cost standard deviation: 11.0932963762
- average transitter type cost: 18.2857142857
-
- lowest score branch and bound: 114
- lowest score greedy: 114
-
- branch and bound iterations: 2467
- branch and bound amount of solutions: 72
- branch and bound used transmitter types: [[3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 3, 5, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [3, 5, 3, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [3, 3, 5, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [3, 4, 4, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [3, 5, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 3, 4, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0]]
-
- instances used transmitter type 5+: 0
- instances used transmitter type 5+, no duplicate transmitter type costs: 0
-
-
-
- EASY 
- Scheme: [5, 5, 7, 26, 31, 44, 49]
- transmitter type cost standard deviation: 17.2744945878
+ Scheme: [7, 12, 19, 20, 21, 42, 46]
+ transmitter type cost standard deviation: 13.5796967295
  average transitter type cost: 23.8571428571
 
- lowest score branch and bound: 87
- lowest score greedy: 87
+ lowest score branch and bound: 148
+ lowest score greedy: 148
 
- branch and bound iterations: 2394
- branch and bound amount of solutions: 30
- branch and bound used transmitter types: [[4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [3, 5, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [3, 5, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0], [4, 4, 3, 1, 0, 0, 0]]
+ branch and bound iterations: 35102
+ branch and bound amount of solutions: 2
+ branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
 
  instances used transmitter type 5+: 0
  instances used transmitter type 5+, no duplicate transmitter type costs: 0
 
 
 
- EASY 
- Scheme: [8, 9, 10, 17, 33, 45, 47]
- transmitter type cost standard deviation: 15.9322545389
- average transitter type cost: 24.1428571429
+ HARD 
+ Scheme: [8, 13, 24, 25, 26, 39, 41]
+ transmitter type cost standard deviation: 11.2558374878
+ average transitter type cost: 25.1428571429
 
- lowest score branch and bound: 114
- lowest score greedy: 114
+ lowest score branch and bound: 176
+ lowest score greedy: 176
 
- branch and bound iterations: 2181
+ branch and bound iterations: 54211
  branch and bound amount of solutions: 2
  branch and bound used transmitter types: [[5, 3, 3, 1, 0, 0, 0], [5, 3, 3, 1, 0, 0, 0]]
 
@@ -221,223 +119,33 @@
 
 
 schemes / iterations sorted
-2181: [8, 9, 10, 17, 33, 45, 47]
-2394: [5, 5, 7, 26, 31, 44, 49]
-2467: [9, 9, 9, 15, 18, 27, 41]
-2535: [2, 3, 4, 8, 27, 38, 45]
-2561: [35, 36, 36, 41, 45, 47, 48]
-2602: [7, 9, 10, 20, 29, 33, 47]
-2921: [17, 19, 21, 33, 43, 47, 49]
-3081: [17, 19, 22, 28, 44, 47, 50]
-3101: [7, 8, 12, 24, 31, 38, 46]
-3133: [7, 8, 13, 24, 33, 39, 40]
-3261: [1, 1, 3, 4, 12, 16, 29]
-3380: [11, 14, 14, 20, 33, 41, 47]
-3421: [13, 16, 17, 25, 33, 45, 48]
-3428: [18, 18, 24, 28, 44, 45, 47]
-3430: [2, 4, 7, 11, 35, 39, 39]
-3434: [16, 17, 18, 20, 37, 43, 47]
-3438: [3, 4, 6, 9, 17, 20, 28]
-3474: [3, 7, 7, 17, 26, 34, 41]
-3510: [6, 7, 11, 13, 37, 45, 49]
-3691: [11, 14, 14, 18, 28, 35, 47]
-3851: [5, 8, 8, 24, 25, 38, 44]
-3853: [12, 14, 15, 21, 26, 32, 37]
-4093: [3, 6, 14, 18, 44, 47, 50]
-4239: [5, 9, 12, 26, 36, 46, 48]
-4505: [1, 2, 5, 10, 14, 27, 50]
-4516: [15, 18, 19, 22, 41, 44, 50]
-4540: [9, 10, 11, 27, 28, 31, 49]
-4605: [1, 3, 7, 14, 21, 30, 41]
-4716: [5, 5, 14, 36, 45, 46, 48]
-4721: [4, 7, 13, 24, 37, 40, 46]
-4843: [7, 10, 14, 25, 30, 45, 47]
-4925: [8, 12, 14, 19, 32, 38, 42]
-4961: [1, 3, 4, 5, 31, 33, 47]
-5175: [5, 5, 13, 17, 23, 47, 49]
-5190: [6, 8, 12, 19, 23, 34, 45]
-5333: [3, 3, 15, 18, 32, 39, 45]
-5540: [24, 26, 27, 37, 37, 42, 48]
-5569: [1, 3, 5, 12, 15, 18, 48]
-5797: [7, 11, 15, 20, 34, 38, 42]
-5972: [1, 5, 9, 10, 30, 33, 46]
-5974: [6, 7, 11, 17, 20, 23, 48]
-6077: [4, 8, 13, 18, 35, 37, 38]
-6080: [7, 10, 10, 17, 18, 40, 44]
-6540: [4, 8, 10, 17, 22, 36, 49]
-6581: [1, 5, 6, 6, 35, 36, 44]
-6778: [6, 11, 15, 29, 40, 41, 42]
-6856: [3, 9, 9, 23, 27, 37, 46]
-7244: [7, 12, 12, 17, 30, 32, 35]
-7268: [15, 20, 24, 35, 47, 48, 49]
-7524: [6, 8, 18, 37, 37, 46, 50]
-7687: [8, 10, 21, 22, 43, 44, 45]
-7785: [10, 12, 12, 13, 18, 21, 45]
-8156: [9, 11, 19, 27, 32, 38, 48]
-8629: [16, 20, 24, 33, 38, 42, 46]
-8661: [2, 5, 10, 16, 22, 26, 35]
-9043: [4, 5, 19, 20, 36, 42, 48]
-9313: [9, 13, 16, 28, 28, 35, 42]
-9535: [1, 5, 16, 25, 35, 48, 49]
-9585: [2, 3, 19, 31, 39, 43, 46]
-9622: [12, 16, 22, 41, 42, 43, 46]
-9880: [5, 7, 13, 21, 26, 26, 27]
-10080: [2, 7, 16, 40, 41, 44, 48]
-10233: [1, 8, 14, 26, 35, 42, 44]
-10302: [5, 7, 19, 35, 37, 46, 46]
-10384: [7, 13, 18, 38, 41, 43, 47]
-10394: [11, 12, 21, 28, 30, 42, 47]
-10566: [13, 16, 19, 27, 29, 32, 34]
-11308: [1, 9, 11, 12, 32, 33, 44]
-11937: [10, 14, 18, 23, 29, 32, 42]
-12618: [9, 10, 25, 28, 35, 47, 48]
-12636: [7, 12, 20, 23, 33, 47, 50]
-12674: [4, 8, 19, 23, 34, 46, 50]
-12880: [1, 11, 15, 25, 41, 44, 48]
-13044: [6, 11, 20, 36, 37, 46, 48]
-13086: [1, 7, 18, 33, 42, 43, 46]
-13313: [10, 15, 19, 23, 31, 37, 40]
-13507: [8, 14, 17, 20, 31, 35, 44]
-13605: [2, 5, 21, 23, 34, 50, 50]
-13833: [11, 18, 19, 20, 32, 48, 50]
-14065: [6, 14, 18, 22, 36, 42, 48]
-14228: [8, 12, 15, 18, 23, 29, 47]
-14393: [4, 11, 19, 24, 40, 45, 46]
-14796: [2, 6, 17, 24, 31, 36, 49]
-14862: [2, 12, 17, 37, 44, 45, 50]
-15119: [4, 10, 13, 18, 23, 35, 37]
-15226: [1, 4, 14, 16, 19, 44, 48]
-15229: [6, 8, 18, 28, 32, 32, 36]
-15333: [2, 7, 9, 13, 15, 38, 45]
-15416: [9, 13, 18, 21, 24, 41, 43]
-15682: [12, 14, 19, 23, 25, 28, 41]
-15852: [2, 7, 20, 28, 41, 42, 46]
-15969: [19, 19, 24, 24, 26, 31, 49]
-16408: [7, 11, 21, 29, 32, 40, 47]
-16689: [2, 7, 11, 14, 19, 26, 44]
-16964: [32, 33, 35, 36, 37, 40, 47]
-17997: [4, 5, 19, 27, 30, 32, 50]
-18402: [11, 13, 20, 24, 27, 28, 50]
-18550: [11, 15, 22, 27, 30, 37, 49]
-18897: [3, 6, 15, 15, 26, 27, 39]
-19538: [12, 19, 26, 32, 42, 42, 50]
-19722: [2, 11, 19, 27, 38, 39, 49]
-19831: [33, 36, 38, 43, 44, 47, 47]
-20159: [6, 8, 16, 17, 26, 27, 28]
-20193: [6, 8, 26, 29, 41, 46, 48]
-20479: [11, 16, 23, 27, 29, 45, 48]
-20830: [2, 11, 20, 32, 40, 46, 47]
-21194: [8, 15, 20, 30, 33, 36, 47]
-21251: [2, 4, 7, 8, 9, 26, 45]
-21348: [11, 16, 16, 21, 24, 25, 33]
-21552: [9, 20, 22, 43, 45, 45, 47]
-22299: [4, 7, 23, 25, 35, 37, 47]
-23757: [5, 9, 16, 17, 24, 25, 36]
-24263: [11, 14, 23, 26, 30, 36, 36]
-24871: [25, 26, 37, 42, 44, 48, 49]
-25017: [1, 9, 17, 21, 28, 38, 46]
-25341: [7, 12, 24, 36, 39, 43, 43]
-25994: [12, 18, 18, 21, 22, 39, 48]
-26198: [10, 13, 22, 32, 33, 34, 36]
-26376: [3, 8, 13, 16, 19, 24, 38]
-27922: [8, 19, 20, 21, 31, 45, 47]
-28098: [7, 14, 22, 38, 39, 39, 41]
-28336: [2, 4, 22, 23, 25, 41, 50]
-28575: [10, 12, 28, 28, 36, 41, 46]
-28832: [2, 14, 17, 28, 35, 39, 42]
-28933: [3, 10, 11, 12, 19, 21, 35]
-29366: [6, 14, 22, 25, 35, 39, 42]
-29957: [5, 13, 15, 19, 20, 37, 49]
-30235: [1, 12, 23, 25, 39, 50, 50]
-30486: [1, 12, 16, 22, 33, 35, 38]
-32441: [6, 15, 17, 18, 32, 32, 33]
-32772: [6, 8, 11, 11, 12, 34, 39]
-33366: [6, 12, 18, 20, 26, 27, 45]
-33373: [12, 19, 23, 35, 36, 37, 37]
-33826: [10, 14, 30, 41, 41, 46, 48]
-33884: [2, 13, 15, 22, 28, 30, 48]
-35415: [3, 9, 23, 24, 34, 38, 42]
-36623: [3, 6, 26, 29, 34, 43, 44]
-36865: [1, 7, 14, 17, 18, 28, 41]
-38684: [1, 13, 18, 24, 26, 45, 49]
-38778: [5, 13, 17, 25, 26, 26, 43]
-38910: [5, 9, 10, 11, 12, 24, 25]
-39128: [1, 16, 17, 25, 34, 36, 48]
-39761: [24, 26, 37, 40, 41, 43, 50]
-39961: [8, 21, 23, 24, 38, 41, 47]
-40118: [12, 14, 14, 15, 15, 37, 42]
-40335: [15, 24, 24, 28, 32, 38, 49]
-41150: [2, 15, 17, 27, 28, 38, 50]
-41970: [1, 7, 17, 21, 23, 33, 35]
-43304: [3, 14, 17, 20, 28, 30, 50]
-44417: [28, 30, 39, 40, 44, 44, 47]
-46862: [24, 30, 38, 42, 47, 48, 49]
-48882: [12, 20, 22, 25, 26, 40, 40]
-48960: [12, 21, 25, 26, 31, 40, 47]
-52764: [7, 21, 21, 29, 29, 43, 47]
-54575: [2, 16, 25, 37, 42, 43, 46]
-54626: [20, 25, 27, 27, 31, 33, 48]
-55116: [5, 5, 34, 36, 40, 41, 42]
-57680: [3, 14, 22, 28, 29, 41, 43]
-60274: [1, 10, 15, 17, 20, 30, 32]
-60893: [17, 29, 34, 43, 47, 49, 49]
-60945: [12, 22, 31, 35, 41, 43, 49]
-62032: [9, 12, 31, 32, 36, 37, 38]
-62419: [1, 15, 27, 42, 43, 45, 47]
-63980: [22, 27, 31, 33, 33, 38, 50]
-68300: [4, 19, 21, 23, 30, 42, 48]
-71382: [6, 23, 25, 33, 38, 45, 48]
-80318: [4, 14, 25, 26, 32, 34, 48]
-89140: [3, 12, 33, 34, 36, 48, 49]
-90328: [6, 17, 17, 20, 20, 30, 40]
-93787: [6, 21, 30, 40, 41, 44, 50]
-94414: [4, 20, 22, 24, 30, 43, 43]
-95448: [1, 16, 19, 29, 31, 33, 37]
-104612: [24, 31, 32, 33, 34, 43, 43]
-105802: [11, 14, 20, 21, 21, 24, 25]
-108340: [2, 16, 16, 18, 20, 34, 39]
-110438: [4, 15, 22, 27, 27, 33, 39]
-113440: [6, 20, 29, 34, 37, 42, 44]
-116538: [16, 25, 30, 31, 32, 38, 47]
-118526: [2, 17, 19, 24, 28, 33, 34]
-120456: [6, 20, 24, 30, 30, 38, 39]
-123872: [16, 22, 36, 37, 41, 41, 42]
-124198: [3, 10, 16, 17, 18, 22, 26]
-127227: [13, 28, 28, 34, 37, 39, 46]
-133026: [4, 19, 26, 26, 35, 36, 41]
-149518: [1, 21, 33, 40, 42, 49, 49]
-168341: [23, 33, 36, 37, 38, 45, 46]
-170282: [26, 33, 45, 47, 49, 49, 50]
-181320: [4, 24, 37, 47, 47, 48, 48]
-193645: [10, 21, 22, 23, 25, 27, 49]
-205661: [5, 12, 13, 15, 16, 16, 22]
-209424: [18, 26, 35, 36, 37, 40, 41]
-218966: [8, 27, 29, 33, 34, 40, 50]
-226740: [5, 28, 35, 37, 46, 47, 49]
-240485: [1, 17, 21, 21, 23, 30, 39]
-252436: [10, 32, 33, 40, 42, 45, 48]
-272374: [8, 31, 35, 41, 42, 48, 48]
-275396: [3, 11, 45, 46, 47, 47, 50]
-286264: [1, 20, 33, 34, 38, 39, 44]
-534752: [7, 26, 29, 32, 32, 33, 40]
-735406: [4, 34, 35, 37, 38, 46, 48]
+2310: [15, 16, 19, 27, 42, 43, 44]
+3753: [8, 9, 10, 21, 25, 26, 27]
+5393: [1, 2, 8, 14, 22, 24, 46]
+11686: [2, 7, 9, 16, 18, 30, 47]
+15538: [7, 8, 12, 13, 16, 18, 50]
+22308: [9, 14, 21, 26, 33, 36, 37]
+22611: [1, 10, 14, 14, 31, 33, 41]
+28653: [13, 17, 26, 30, 31, 39, 45]
+35102: [7, 12, 19, 20, 21, 42, 46]
+54211: [8, 13, 24, 25, 26, 39, 41]
 
 
  Hardest Branch
- maxIterations: 735406
- fivePlusCount: 26
+ maxIterations: 54211
+ fivePlusCount: 0
  fivePlusNoDuplicateCount: 0
- hardestScheme: [4, 34, 35, 37, 38, 46, 48]
- maximum transmitter type cost standard deviation: 13.436168064
+ hardestScheme: [8, 13, 24, 25, 26, 39, 41]
+ maximum transmitter type cost standard deviation: 11.2558374878
 
 
  times lowest greedy score != lowest BnB score0
  easiest Branch
- minIterations: 2181
- fivePlusCount: 26
+ minIterations: 2310
+ fivePlusCount: 0
  fivePlusNoDuplicateCount: 0
- easiestScheme: [8, 9, 10, 17, 33, 45, 47]
- minimum transmitter type cost standard deviation: 15.9322545389
+ easiestScheme: [15, 16, 19, 27, 42, 43, 44]
+ minimum transmitter type cost standard deviation: 12.2923570082
 
 
  times lowest greedy score != lowest BnB score0

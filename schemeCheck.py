@@ -9,7 +9,6 @@ import numpy as np
 
 
 
-
 f = open('writefile', 'w')
 def greedyRandom(nationtxt):
     '''
@@ -482,6 +481,20 @@ def updateTransmitter(nation, previous, scheme, provinces, costs, index):
 
     return costs, index
 
+def sorter(a, b):
+    af = []
+    bf = []
+    
+    dic = {}
+    
+    for i in range(len(a)):
+        dic.update({a[i]:b[i]})
+    
+    for key, value in sorted(dic.iteritems()):
+        af.append(key)
+        bf.append(value)
+    return af, bf
+    
 def avgr(diffs, iters):
    
     uniqueDiffs = []
@@ -547,6 +560,7 @@ def main(reps, doubleBranch):
     minSDev = 0
     sDevl = []
     iterl = []
+    schemesComplete = []
     iterl2 = []
 
     q0l = []
@@ -566,7 +580,7 @@ def main(reps, doubleBranch):
     avgl = []
     scorel = []
    
-    schemesComplete = []
+
     
 
 
@@ -580,12 +594,7 @@ def main(reps, doubleBranch):
 
 
         bound, minScoreFreq, scheme, fivePlusG, fivePlusNoDuplicateG, usedTransG, scoreCount, sDev, q0, q1, q2, q3, q4, q5, avg = Repeater(greedyRandom, 10000, "Nederland.txt")
-        #~ print q0, q1, q2, q3, q4, q5, avg, sDev
-
-
-
         fivePlus, fivePlusNoDuplicate, usedTransmitters, lowCost, nSolutions, iterations = branchNBound("TXT/Nederland.txt", bound, scheme)
-
 
 
 
@@ -594,12 +603,11 @@ def main(reps, doubleBranch):
             iterl2.append(iterations2)
 
         sDevl.append(sDev)
-        
         iterl.append(iterations)
         schemesComplete.append(scheme)
-
-
-
+        avgl.append(avg)
+        scorel.append(lowCost)
+        
         q0l.append(q0)
         q1l.append(q1)
         q2l.append(q2)
@@ -608,9 +616,6 @@ def main(reps, doubleBranch):
         q5l.append(q5)
         
 
-        
-        avgl.append(avg)
-        scorel.append(lowCost)
         
         
 
@@ -721,7 +726,6 @@ def main(reps, doubleBranch):
     
     
     
-    
     schemeIters = {}
     schemeItersSorted = {}
     print "\n\n"
@@ -731,22 +735,6 @@ def main(reps, doubleBranch):
     
         
     print "\n\n"
-    
-    
-    
-    
-    #~ for key in sorted(schemeIters):
-        #~ vallist.append(schemeIters[key])
-
-
-
-    #~ for k in vallist:    
-        #~ for i in schemeIters:
-            #~ if schemeIters[i] == k:
-                #~ keylist.append(i)
-
-    #~ for i in range(len(keylist)):
-        #~ print keylist[i], vallist[i]
         
     print "schemes / iterations sorted"
     f.write("\n"+"schemes / iterations sorted")
@@ -797,219 +785,47 @@ def main(reps, doubleBranch):
     #~ print "Hardest Greedy"
     #~ f.write("\n curMinScoreFreq: "+str(curMinScoreFreq)+"\n fivePlusCountG: "+str(fivePlusCountG)+"\n fivePlusNoDuplicateCountG: "+str(fivePlusNoDuplicateCountG)+"\n hardestScheme: "+str(hardestSchemeG)+"\n greedyFail: "+str(greedyFail))
     #~ print "\n curMinScoreFreq: "+str(curMinScoreFreq)+"\n fivePlusCountG: "+str(fivePlusCountG)+"\n fivePlusNoDuplicateCountG: "+str(fivePlusNoDuplicateCountG)+"\n hardestScheme: "+str(hardestSchemeG)+"\n greedyFail: "+str(greedyFail)
-
-
     f.close()
-    
-
-    
-    
-
+    plotter(q0l, q1l, q2l, q3l, q4l, q5l, iterl)
     
     
-    g, (ax1) = plt.subplots(1)
-    ax1.scatter(q0l, iterl, color = "black")
-    #~ print q0l
-    #~ print iterl
-    ax1.plot(avgr(q0l, iterl)[0], avgr(q0l, iterl)[1], color = "red")
-    #~ print avgr(q0l, iterl)[0]
-    #~ print avgr(q0l, iterl)[1]
-   
-    if doubleBranch == 1:
-        ax1.scatter(q0l, iterl2, color = "red")
-        
-    ax1.set_title("1/2")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    #~ ax1.set_yscale('log')
-    plt.savefig('plots/1-2.png', bbox_inches='tight')
-
-    h, (ax1) = plt.subplots(1)
-    ax1.scatter(q1l, iterl, color = "black")
-    ax1.plot(avgr(q1l, iterl)[0], avgr(q1l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q1l, iterl2, color = "red")
-    ax1.set_title("2/3")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    #~ ax1.set_yscale('log')
-    plt.savefig('plots/2-3.png', bbox_inches='tight')
-
-    i, (ax1) = plt.subplots(1)
-    ax1.scatter(q2l, iterl, color = "black")
-    ax1.plot(avgr(q2l, iterl)[0], avgr(q2l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q2l, iterl2, color = "red")
-    ax1.set_title("3/4")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    #~ ax1.set_yscale('log')
-    plt.savefig('plots/3-4.png', bbox_inches='tight')
-
-    j, (ax1) = plt.subplots(1)
-    ax1.scatter(q3l, iterl, color = "black")
-    ax1.plot(avgr(q3l, iterl)[0], avgr(q3l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q3l, iterl2, color = "red")
-    ax1.set_title("4/5")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    #~ ax1.set_yscale('log')
-    plt.savefig('plots/4-5.png', bbox_inches='tight')
-
-    k, (ax1) = plt.subplots(1)
-    ax1.scatter(q4l, iterl, color = "black")
-    ax1.plot(avgr(q4l, iterl)[0], avgr(q4l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q4l, iterl2, color = "red")
-    ax1.set_title("5/6")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    #~ ax1.set_yscale('log')
-    plt.savefig('plots/5-6.png', bbox_inches='tight')
-
-    l, (ax1) = plt.subplots(1)
-    ax1.scatter(q5l, iterl, color = "black")
-    ax1.plot(avgr(q5l, iterl)[0], avgr(q5l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q5l, iterl2, color = "red")
-    ax1.set_title("6/7")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    #~ ax1.set_yscale('log')
-    plt.savefig('plots/6-7.png', bbox_inches='tight')
-#~ ____________________________________________________________________-
-    m, (ax1) = plt.subplots(1)
-    ax1.scatter(sDevl, iterl, color = "black")
-    ax1.plot(avgr(sDevl, iterl)[0], avgr(sDevl, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(sDevl, iterl2, color = "red")
-    ax1.set_title("sDev")
-    ax1.set_xlabel("SDev", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    #~ ax1.set_yscale('log')
-    plt.savefig('plots/sDev.png', bbox_inches='tight')
-
-    n, (ax1) = plt.subplots(1)
-    ax1.scatter(avgl, scorel, color = "black")
-    ax1.plot(avgr(avgl, scorel)[0], avgr(avgl, scorel)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(avgl, iterl2, color = "red")
-    ax1.set_title("average cost/lowest score")
-    ax1.set_xlabel("avg cost", fontsize = 26)
-    ax1.set_ylabel("lowest score", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    plt.savefig('plots/avg.png', bbox_inches='tight')
-
-#~ ____________________________________________________________________-
-    o, (ax1) = plt.subplots(1)
-    ax1.scatter(q0l, iterl, color = "black")
-    ax1.plot(avgr(q0l, iterl)[0], avgr(q0l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q0l, iterl2, color = "red")
-    ax1.set_title("1/2")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/1-2-log.png', bbox_inches='tight')
-
-    p, (ax1) = plt.subplots(1)
-    ax1.scatter(q1l, iterl, color = "black")
-    ax1.plot(avgr(q1l, iterl)[0], avgr(q1l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q1l, iterl2, color = "red")
-    ax1.set_title("2/3")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/2-3-log.png', bbox_inches='tight')
-
-    q, (ax1) = plt.subplots(1)
-    ax1.scatter(q2l, iterl, color = "black")
-    ax1.plot(avgr(q2l, iterl)[0], avgr(q2l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q2l, iterl2, color = "red")
-    ax1.set_title("3/4")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/3-4-log.png', bbox_inches='tight')
-
-    r, (ax1) = plt.subplots(1)
-    ax1.scatter(q3l, iterl, color = "black")
-    ax1.plot(avgr(q3l, iterl)[0], avgr(q3l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q3l, iterl2, color = "red")
-    ax1.set_title("4/5")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/4-5-log.png', bbox_inches='tight')
-
-    s, (ax1) = plt.subplots(1)
-    ax1.scatter(q4l, iterl, color = "black")
-    ax1.plot(avgr(q4l, iterl)[0], avgr(q4l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q4l, iterl2, color = "red")
-    ax1.set_title("5/6")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/5-6-log.png', bbox_inches='tight')
-
-    t, (ax1) = plt.subplots(1)
-    ax1.scatter(q5l, iterl, color = "black")
-    ax1.plot(avgr(q5l, iterl)[0], avgr(q5l, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(q5l, iterl2, color = "red")
-    ax1.set_title("6/7")
-    ax1.set_xlabel("difference", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/6-7-log.png', bbox_inches='tight')
-#~ ____________________________________________________________________-
-    u, (ax1) = plt.subplots(1)
-    ax1.scatter(sDevl, iterl, color = "black")
-    ax1.plot(avgr(sDevl, iterl)[0], avgr(sDevl, iterl)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(sDevl, iterl2, color = "red")
-    ax1.set_title("sDev")
-    ax1.set_xlabel("SDev", fontsize = 26)
-    ax1.set_ylabel("iterations", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/sDev-log.png', bbox_inches='tight')
+def plotter(x1, x2, x3, x4, x5, x6, y):
     
-    v, (ax1) = plt.subplots(1)
-    ax1.scatter(avgl, scorel, color = "black")
-    ax1.plot(avgr(avgl, scorel)[0], avgr(avgl, scorel)[1], color = "red")
-    if doubleBranch == 1:
-        ax1.scatter(avgl, iterl2, color = "red")
-    ax1.set_title("average cost/lowest score")
-    ax1.set_xlabel("avg cost", fontsize = 26)
-    ax1.set_ylabel("lowest score", fontsize = 24)
-    ax1.tick_params(labelsize = 18)
-    ax1.set_yscale('log')
-    plt.savefig('plots/avg-log.png', bbox_inches='tight')
+    #~ hh = plt.figure(figsize = (5.874  , 8.205 * (5.0/6)))
+    hh = plt.figure()
+    
+    
+    hh, plt.subplots(6)
+    ax1 = hh.add_axes([0.04,0.1,0.44,0.2])
+    ax2 = hh.add_axes([0.52,0.1,0.44,0.2])
+    ax3 = hh.add_axes([0.04,0.4,0.44,0.2])
+    ax4 = hh.add_axes([0.52,0.4,0.44,0.2])
+    ax5 = hh.add_axes([0.04,0.7,0.44,0.2])
+    ax6 = hh.add_axes([0.52,0.7,0.44,0.2])
+    
+    xlist = [x1, x2, x3, x4, x5, x6]
+    axlist = [ax1, ax2, ax3, ax4, ax5, ax6]
+    fitlist = []
+    
+    
+    
+  
+    for i in range(len(axlist)):
+        fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],3)))
+        axlist[i].scatter(xlist[i], y, color = "black")
+        axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i](sorter(xlist[i],y)[0]), '--r')
 
-#~ ____________________________________________________________________-
+    hh.savefig('foo.png', dpi = 100)
 
+    
+    
+  
    
 
+#~ ____________________________________________________________________-
+
+
 
     
-main(200, 0)
+main(10, 0)
 #~ print avgr([5, 5, 5, 2, 6, 7, 7, 8, 4, 6, 7, 5, 3, 2, 5, 8, 9, 5, 5, 3, 3],[5, 6, 3, 8, 4, 7, 4, 7, 8, 4, 7, 3, 1, 6, 9, 0, 5, 2, 6, 8, 7])
