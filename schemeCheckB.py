@@ -850,7 +850,7 @@ def main(reps, doubleBranch):
     ax1.set_ylabel("iterations", fontsize = alf)
     ax1.tick_params(labelsize = alf)
     ax1.set_yscale('log')
-    u.legend([black_line, red_line] ,[ 'cost gap a/b', 'cost gap b/c, c/d, d/e, e/f, f/g'], bbox_to_anchor=(0.85, 0.89), prop = lfs)
+    u.legend([red_line, black_line] ,[ 'cost gap a/b', 'cost gap b/c, c/d, d/e, e/f, f/g'], bbox_to_anchor=(0.85, 0.89), prop = lfs)
     u.savefig('gap.png', bbox_inches='tight')
     
     
