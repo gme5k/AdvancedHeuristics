@@ -6,9 +6,11 @@ from randScoreFunction import *
 from scoreFunction import *
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import curve_fit
 
-
-
+alf = 11
+lw1 = 0.5
+lw2 = 3
 f = open('writefile', 'w')
 def greedyRandom(nationtxt):
     '''
@@ -541,7 +543,10 @@ def avgr(diffs, iters):
         
     return diffsFinal, itersFinal
 
-
+def func(x, a, b):
+    return a/x + b
+    
+        
 
 def main(reps, doubleBranch):
     h = 1
@@ -788,14 +793,33 @@ def main(reps, doubleBranch):
     f.close()
     plotter(q0l, q1l, q2l, q3l, q4l, q5l, iterl)
     
+def divide(a):
+    l = []
+    
+    for i in a:
+        if i != 0:
+            p = float(1) / i
+            l.append(p)
+        else: 
+            l.append(i)
+    return l
+    
     
 def plotter(x1, x2, x3, x4, x5, x6, y):
     
-    #~ hh = plt.figure(figsize = (5.874  , 8.205 * (5.0/6)))
-    hh = plt.figure()
+    
+    #~ x2 = divide(x2)
+    #~ x3 = divide(x3)
+    #~ x4 = divide(x4)
+    #~ x5 = divide(x5)
+    #~ x6 = divide(x6)
+    
+    tt = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    hh = plt.figure(figsize = (5.396  , 8.191))
+
+    hh.clf()
     
     
-    hh, plt.subplots(6)
     ax1 = hh.add_axes([0.04,0.1,0.44,0.2])
     ax2 = hh.add_axes([0.52,0.1,0.44,0.2])
     ax3 = hh.add_axes([0.04,0.4,0.44,0.2])
@@ -804,19 +828,44 @@ def plotter(x1, x2, x3, x4, x5, x6, y):
     ax6 = hh.add_axes([0.52,0.7,0.44,0.2])
     
     xlist = [x1, x2, x3, x4, x5, x6]
+   
     axlist = [ax1, ax2, ax3, ax4, ax5, ax6]
     fitlist = []
     
     
     
+    
+    
+
+    
   
     for i in range(len(axlist)):
-        fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],3)))
-        axlist[i].scatter(xlist[i], y, color = "black")
-        axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i](sorter(xlist[i],y)[0]), '--r')
-
-    hh.savefig('foo.png', dpi = 100)
-
+        if i == 0:
+            fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],2)))
+        else:
+            fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],2)))
+            #~ fitlist.append(curve_fit(func, sorter(xlist[i],y)[0], sorter(xlist[i],y)[1])[0])
+        axlist[i].scatter(xlist[i], y, color = "black", linewidth = lw1)
+        axlist[i].set_title("Transmitter "+tt[i]+"/"+tt[i+1], fontsize = alf)
+        axlist[i].set_xlabel('Cost Gap', fontsize = alf)
+        if i % 2 == 0:
+            axlist[i].set_ylabel('Iterations', fontsize = alf)
+        else:
+            axlist[i].set_yticklabels([])
+        axlist[i].tick_params(axis = 'both', labelsize = alf)
+        axlist[i].set_xlim(0, 50)
+        axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i](sorter(xlist[i],y)[0]), '--r', linewidth = lw2)
+ 
+    hh.savefig('lin.png',bbox_inches='tight', dpi = 100)
+    
+    for i in range(len(axlist)):
+        axlist[i].set_yscale('log')
+        if i % 2 == 0:
+            axlist[i].set_ylabel('Iterations', fontsize = alf)
+        else:
+            axlist[i].set_yticklabels([])
+        
+    hh.savefig('log.png',bbox_inches='tight', dpi = 100)
     
     
   
