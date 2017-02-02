@@ -543,8 +543,7 @@ def avgr(diffs, iters):
         
     return diffsFinal, itersFinal
 
-def func(x, a, b):
-    return a/x + b
+
     
         
 
@@ -791,6 +790,17 @@ def main(reps, doubleBranch):
     #~ f.write("\n curMinScoreFreq: "+str(curMinScoreFreq)+"\n fivePlusCountG: "+str(fivePlusCountG)+"\n fivePlusNoDuplicateCountG: "+str(fivePlusNoDuplicateCountG)+"\n hardestScheme: "+str(hardestSchemeG)+"\n greedyFail: "+str(greedyFail))
     #~ print "\n curMinScoreFreq: "+str(curMinScoreFreq)+"\n fivePlusCountG: "+str(fivePlusCountG)+"\n fivePlusNoDuplicateCountG: "+str(fivePlusNoDuplicateCountG)+"\n hardestScheme: "+str(hardestSchemeG)+"\n greedyFail: "+str(greedyFail)
     f.close()
+    
+    u, (ax1) = plt.subplots(1)
+    ax1.scatter(sDevl, iterl, color = "black", linewidth = lw1)
+    ax1.set_title("sDev", fontsize = alf)
+    ax1.set_xlabel("SDev", fontsize = alf)
+    ax1.set_ylabel("iterations", fontsize = alf)
+    ax1.tick_params(labelsize = alf)
+    ax1.set_yscale('log')
+    plt.savefig('plots/sDev-log.png', bbox_inches='tight')
+    
+    
     plotter(q0l, q1l, q2l, q3l, q4l, q5l, iterl)
     
 def divide(a):
@@ -804,6 +814,17 @@ def divide(a):
             l.append(i)
     return l
     
+def func(x, a, b):
+    return a/float(x[0]) + b
+
+def funcAlt(x, a, b):
+    return a/float(x) + b
+    
+def makeFit(xl, a, b):
+    l = []
+    for i in xl:
+        l.append(funcAlt(i, a, b))
+    return l
     
 def plotter(x1, x2, x3, x4, x5, x6, y):
     
@@ -833,18 +854,28 @@ def plotter(x1, x2, x3, x4, x5, x6, y):
     fitlist = []
     
     
+    #~ popt, pcov= curve_fit(func, sorter(xlist[i],y)[0], sorter(xlist[i],y)[1])
+    #~ fitlist.append(makefit(sorter(xlist[i],y)[0], popt[0], popt[1]))
     
     
     
-
+    
+    #~ for i in range(len(axlist)):
+        #~ popt, pcov= curve_fit(func, sorter(xlist[i],y)[0], sorter(xlist[i],y)[1])
+        #~ print popt[0], popt[1]
+#~ plot(axlist[i], func(axlist[i])
+    
     
   
     for i in range(len(axlist)):
         if i == 0:
             fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],2)))
         else:
-            fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],2)))
-            #~ fitlist.append(curve_fit(func, sorter(xlist[i],y)[0], sorter(xlist[i],y)[1])[0])
+            #~ fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],1)))
+            #~ popt, pcov= curve_fit(func, sorter(xlist[i],y)[0], sorter(xlist[i],y)[1])
+            #~ print popt
+            #~ fitlist.append(makeFit(sorter(xlist[i],y)[0], popt[0], popt[1]))
+            
         axlist[i].scatter(xlist[i], y, color = "black", linewidth = lw1)
         axlist[i].set_title("Transmitter "+tt[i]+"/"+tt[i+1], fontsize = alf)
         axlist[i].set_xlabel('Cost Gap', fontsize = alf)
@@ -854,7 +885,10 @@ def plotter(x1, x2, x3, x4, x5, x6, y):
             axlist[i].set_yticklabels([])
         axlist[i].tick_params(axis = 'both', labelsize = alf)
         axlist[i].set_xlim(0, 50)
-        axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i](sorter(xlist[i],y)[0]), '--r', linewidth = lw2)
+        if i == 0:
+            axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i](sorter(xlist[i],y)[0]), '--r', linewidth = lw2)
+        else:
+            #~ axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i], '--r', linewidth = lw2)
  
     hh.savefig('lin.png',bbox_inches='tight', dpi = 100)
     
@@ -868,6 +902,8 @@ def plotter(x1, x2, x3, x4, x5, x6, y):
     hh.savefig('log.png',bbox_inches='tight', dpi = 100)
     
     
+   
+    
   
    
 
@@ -876,5 +912,5 @@ def plotter(x1, x2, x3, x4, x5, x6, y):
 
 
     
-main(10, 0)
+main(10000, 0)
 #~ print avgr([5, 5, 5, 2, 6, 7, 7, 8, 4, 6, 7, 5, 3, 2, 5, 8, 9, 5, 5, 3, 3],[5, 6, 3, 8, 4, 7, 4, 7, 8, 4, 7, 3, 1, 6, 9, 0, 5, 2, 6, 8, 7])
