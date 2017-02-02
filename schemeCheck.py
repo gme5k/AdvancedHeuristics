@@ -597,13 +597,13 @@ def main(reps, doubleBranch):
         numTransmitters = 7
 
 
-        bound, minScoreFreq, scheme, fivePlusG, fivePlusNoDuplicateG, usedTransG, scoreCount, sDev, q0, q1, q2, q3, q4, q5, avg = Repeater(greedyRandom, 10000, "Nederland.txt")
-        fivePlus, fivePlusNoDuplicate, usedTransmitters, lowCost, nSolutions, iterations = branchNBound("TXT/Nederland.txt", bound, scheme)
+        bound, minScoreFreq, scheme, fivePlusG, fivePlusNoDuplicateG, usedTransG, scoreCount, sDev, q0, q1, q2, q3, q4, q5, avg = Repeater(greedyRandom, 10000, "Germany.txt")
+        fivePlus, fivePlusNoDuplicate, usedTransmitters, lowCost, nSolutions, iterations = branchNBound("TXT/Germany.txt", bound, scheme)
 
 
 
         if doubleBranch == 1:
-            iterations2 = branchNBound2("TXT/Nederland.txt", bound, scheme)
+            iterations2 = branchNBound2("TXT/Germany.txt", bound, scheme)
             iterl2.append(iterations2)
 
         sDevl.append(sDev)
@@ -870,7 +870,7 @@ def plotter(x1, x2, x3, x4, x5, x6, y):
     for i in range(len(axlist)):
         if i == 0:
             fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],2)))
-        else:
+    
             #~ fitlist.append(np.poly1d(np.polyfit(sorter(xlist[i],y)[0],sorter(xlist[i],y)[1],1)))
             #~ popt, pcov= curve_fit(func, sorter(xlist[i],y)[0], sorter(xlist[i],y)[1])
             #~ print popt
@@ -887,7 +887,7 @@ def plotter(x1, x2, x3, x4, x5, x6, y):
         axlist[i].set_xlim(0, 50)
         if i == 0:
             axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i](sorter(xlist[i],y)[0]), '--r', linewidth = lw2)
-        else:
+       
             #~ axlist[i].plot(sorter(xlist[i],y)[0], fitlist[i], '--r', linewidth = lw2)
  
     hh.savefig('lin.png',bbox_inches='tight', dpi = 100)
